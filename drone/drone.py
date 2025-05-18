@@ -33,6 +33,13 @@ class DroneServer:
         self.aggregation_thread.start()
         self.central_server_ip = config.get("central_server_ip", "127.0.0.1")
         self.central_server_port = config.get("central_server_port", 6000)
+        self.battery_threshold = config.get("battery_threshold", 20)
+        self.battery_level = 100
+        self.forwarding_enabled = True
+        self.battery_thread = threading.Thread(target=self.simulate_battery)
+        self.battery_thread.daemon = True
+        self.battery_thread.start()
+ 
 
 
     def start(self):
@@ -159,16 +166,45 @@ class DroneServer:
             except Exception as e:
                 self.logger.error(f"Error during aggregation: {e}")
                 print(f"❌ Error during aggregation: {e}")
-                
+
+    
+    if not self.forwarding_enabled:
+        self.logger.info("🚫 Skipping data transmission due to low battery.")
+        return
+        
     def send_to_central_server(self, data):
         try:
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.connect((self.central_server_ip, self.central_server_port))
                 s.sendall((json.dumps(data) + "\n").encode())
-                self.logger.info("📤 Sent aggregated data to central server")
+                self.logger.info("Sent aggregated data to central server")
         except Exception as e:
             self.logger.error(f"❌ Failed to send data to central server: {e}")
             print(f"❌ Failed to send data to central server: {e}")
+            
+    def simulate_battery(self):
+        import time
+        while True:
+            try:
+                self.battery_level -= 1  # her döngüde %1 azalsın
+                if self.battery_level <= self.battery_threshold:
+                    if self.forwarding_enabled:
+                        self.logger.warning("🔋 Battery low! Entering Return-to-Base mode.")
+                        print("🔋 Battery low! Entering Return-to-Base mode.")
+                        self.forwarding_enabled = False
+                elif self.battery_level < 100:
+                    self.battery_level += 0.5  # yavaş yavaş şarj oluyor
+                    if not self.forwarding_enabled and self.battery_level > self.battery_threshold + 10:
+                        self.forwarding_enabled = True
+                        self.logger.info("🔋 Battery recharged. Resuming data transmission.")
+                        print("🔋 Battery recharged. Resuming data transmission.")
+    
+                time.sleep(5)  # her 5 saniyede bir batarya güncellemesi
+    
+            except Exception as e:
+                self.logger.error(f"❌ Battery simulation error: {e}")
+                break
+
 
 
 
