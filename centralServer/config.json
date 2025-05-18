@@ -1,0 +1,11 @@
+{
+  "serverPort": 6000,
+  "logFile": "logs/central_server.log",
+  "data_store": "data/sensor_data.json",
+  "dashboard_port": 8050,
+  "max_clients": 100,
+  "buffer_size": 4096,
+  "data_queue_size": 1000,
+  "reconnect_attempts": 5,
+  "reconnect_interval": 5
+}
