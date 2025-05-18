@@ -5,6 +5,8 @@ import os
 import logging
 from datetime import datetime
 from queue import Queue
+from gui import DroneGUI
+
 
 def load_config():
     try:
@@ -207,7 +209,6 @@ class DroneServer:
 
 
 
-from gui import DroneGUI
 
 def main():
     config = load_config()
