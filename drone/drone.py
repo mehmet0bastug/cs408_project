@@ -5,12 +5,13 @@ import os
 import logging
 from datetime import datetime
 from queue import Queue
-from gui import DroneGUI
+from pathlib import Path
 
-
+# Load configuration
 def load_config():
     try:
-        with open("config.json", "r") as file:
+        config_path = Path(__file__).parent / 'config.json'
+        with open(config_path, 'r') as file:
             return json.load(file)
     except FileNotFoundError:
         print("❌ Config file not found. Please provide a valid config.json.")
@@ -19,39 +20,42 @@ def load_config():
         print(f"❌ Error decoding config file: {e}")
         exit(1)
 
-def create_logger(log_file):
+# Initialize logging
+def initialize_logger(log_file):
     os.makedirs(os.path.dirname(log_file), exist_ok=True)
-    logging.basicConfig(filename=log_file, level=logging.INFO, format="%(asctime)s - %(message)s")
+    logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(message)s')
     return logging.getLogger("Drone")
 
+# Drone Server class
 class DroneServer:
     def __init__(self, config, logger):
         self.server_port = config.get("server_port", 5000)
         self.aggregation_window = config.get("aggregation_window", 10)
         self.logger = logger
         self.data_queue = Queue()
-        self.aggregation_thread = threading.Thread(target=self.aggregate_and_forward)
-        self.aggregation_thread.daemon = True
-        self.aggregation_thread.start()
         self.central_server_ip = config.get("central_server_ip", "127.0.0.1")
         self.central_server_port = config.get("central_server_port", 6000)
         self.battery_threshold = config.get("battery_threshold", 20)
         self.battery_level = 100
         self.forwarding_enabled = True
+
+        # Start background threads
+        self.aggregation_thread = threading.Thread(target=self.aggregate_and_forward)
+        self.aggregation_thread.daemon = True
+        self.aggregation_thread.start()
+
         self.battery_thread = threading.Thread(target=self.simulate_battery)
         self.battery_thread.daemon = True
         self.battery_thread.start()
- 
-
 
     def start(self):
         try:
             server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             server_socket.bind(("0.0.0.0", self.server_port))
-            server_socket.listen()
+            server_socket.listen(5)
 
-            self.logger.info(f"Drone server listening on port {self.server_port}")
+            self.logger.info(f"🚀 Drone server listening on port {self.server_port}")
             print(f"🚀 Drone server listening on port {self.server_port}")
 
             while True:
@@ -62,16 +66,16 @@ class DroneServer:
                     client_thread.start()
 
                 except Exception as e:
-                    self.logger.error(f"Error accepting client connection: {e}")
+                    self.logger.error(f"❌ Error accepting client connection: {e}")
                     print(f"❌ Error accepting client connection: {e}")
 
         except Exception as e:
-            self.logger.error(f"Error starting server: {e}")
+            self.logger.error(f"❌ Error starting server: {e}")
             print(f"❌ Error starting server: {e}")
             exit(1)
-    
+
     def handle_client(self, client_socket, client_address):
-        self.logger.info(f"New connection from {client_address}")
+        self.logger.info(f"📶 New connection from {client_address}")
         buffer = b""
 
         try:
@@ -88,35 +92,34 @@ class DroneServer:
                         try:
                             sensor_data = json.loads(message.decode().strip())
                             self.data_queue.put(sensor_data)
-                            self.logger.info(f"Received data from {sensor_data['sensor_id']}: {sensor_data}")
+                            self.logger.info(f"📥 Received data from {sensor_data['sensor_id']}: {sensor_data}")
                             print(f"📥 From {sensor_data['sensor_id']}: {sensor_data}")
 
                         except json.JSONDecodeError as e:
-                            self.logger.error(f"JSON decode error from {client_address}: {e}")
+                            self.logger.error(f"❌ JSON decode error from {client_address}: {e}")
                             print(f"❌ JSON decode error from {client_address}: {e}")
 
                 except socket.timeout:
-                    self.logger.warning(f"Connection timeout with {client_address}")
+                    self.logger.warning(f"⚠️ Connection timeout with {client_address}")
                     print(f"⚠️ Connection timeout with {client_address}")
                     break
 
                 except ConnectionResetError as e:
-                    self.logger.warning(f"Connection reset by {client_address}: {e}")
+                    self.logger.warning(f"⚠️ Connection reset by {client_address}: {e}")
                     print(f"⚠️ Connection reset by {client_address}: {e}")
                     break
 
                 except Exception as e:
-                    self.logger.error(f"Unexpected error with {client_address}: {e}")
+                    self.logger.error(f"❌ Unexpected error with {client_address}: {e}")
                     print(f"❌ Unexpected error with {client_address}: {e}")
                     break
 
         finally:
             client_socket.close()
-            self.logger.info(f"Connection closed with {client_address}")
+            self.logger.info(f"🔌 Connection closed with {client_address}")
             print(f"🔌 Connection closed with {client_address}")
 
     def aggregate_and_forward(self):
-        # Separate buffers for each sensor type
         buffers = {
             "temperature_humidity": [],
             "air_quality": [],
@@ -126,6 +129,10 @@ class DroneServer:
 
         while True:
             try:
+                if not self.forwarding_enabled:
+                    self.logger.info("🚫 Skipping data transmission due to low battery.")
+                    continue
+                
                 data = self.data_queue.get()
 
                 # Determine the sensor type
@@ -145,7 +152,7 @@ class DroneServer:
                 for sensor_type, buffer in buffers.items():
                     if len(buffer) >= self.aggregation_window:
                         # Calculate averages
-                        avg_data = {}
+                        avg_data = {"sensor_id": buffer[0]["sensor_id"]}
                         for key in buffer[0].keys():
                             if key not in ["sensor_id", "timestamp"]:
                                 avg_data[key] = round(sum(d[key] for d in buffer) / len(buffer), 2)
@@ -166,60 +173,49 @@ class DroneServer:
                         buffers[sensor_type].clear()
 
             except Exception as e:
-                self.logger.error(f"Error during aggregation: {e}")
+                self.logger.error(f"❌ Error during aggregation: {e}")
                 print(f"❌ Error during aggregation: {e}")
 
-    
-    if not self.forwarding_enabled:
-        self.logger.info("🚫 Skipping data transmission due to low battery.")
-        return
-        
     def send_to_central_server(self, data):
         try:
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.connect((self.central_server_ip, self.central_server_port))
                 s.sendall((json.dumps(data) + "\n").encode())
-                self.logger.info("Sent aggregated data to central server")
+                self.logger.info("📤 Sent aggregated data to central server")
+                print("📤 Sent aggregated data to central server")
         except Exception as e:
             self.logger.error(f"❌ Failed to send data to central server: {e}")
             print(f"❌ Failed to send data to central server: {e}")
-            
+
     def simulate_battery(self):
         import time
         while True:
             try:
-                self.battery_level -= 1  # her döngüde %1 azalsın
+                self.battery_level -= 1
                 if self.battery_level <= self.battery_threshold:
                     if self.forwarding_enabled:
                         self.logger.warning("🔋 Battery low! Entering Return-to-Base mode.")
                         print("🔋 Battery low! Entering Return-to-Base mode.")
                         self.forwarding_enabled = False
                 elif self.battery_level < 100:
-                    self.battery_level += 0.5  # yavaş yavaş şarj oluyor
+                    self.battery_level += 0.5
                     if not self.forwarding_enabled and self.battery_level > self.battery_threshold + 10:
                         self.forwarding_enabled = True
                         self.logger.info("🔋 Battery recharged. Resuming data transmission.")
                         print("🔋 Battery recharged. Resuming data transmission.")
-    
-                time.sleep(5)  # her 5 saniyede bir batarya güncellemesi
-    
+
+                time.sleep(5)
+
             except Exception as e:
                 self.logger.error(f"❌ Battery simulation error: {e}")
                 break
 
 
-
-
 def main():
     config = load_config()
-    logger = create_logger(config["log_file"])
+    logger = initialize_logger(config["log_file"])
     drone_server = DroneServer(config, logger)
-
-    server_thread = threading.Thread(target=drone_server.start)
-    server_thread.daemon = True
-    server_thread.start()
-
-    DroneGUI(drone_server)
+    drone_server.start()
 
 if __name__ == "__main__":
     main()
