@@ -82,11 +82,13 @@ Each module has its own **`config.json`** file for flexible configuration. Refer
    touch README.md Configuration_Guide.md .gitignore
 
 2. **Run the Drone Server:**
+    ```bash
    cd drone
    python3 drone.py
 
 
 3. **Run the Sensor Node:**
+    ```bash
    cd ../sensorNodes
    python3 sensor.py
 
