@@ -161,14 +161,15 @@ class DroneServer:
                 print(f"❌ Error during aggregation: {e}")
                 
     def send_to_central_server(self, data):
-    try:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect((self.central_server_ip, self.central_server_port))
-            s.sendall((json.dumps(data) + "\n").encode())
-            self.logger.info("📤 Sent aggregated data to central server")
-    except Exception as e:
-        self.logger.error(f"❌ Failed to send data to central server: {e}")
-        print(f"❌ Failed to send data to central server: {e}")
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                s.connect((self.central_server_ip, self.central_server_port))
+                s.sendall((json.dumps(data) + "\n").encode())
+                self.logger.info("📤 Sent aggregated data to central server")
+        except Exception as e:
+            self.logger.error(f"❌ Failed to send data to central server: {e}")
+            print(f"❌ Failed to send data to central server: {e}")
+
 
 
 
