@@ -1,0 +1,12 @@
+{
+  "drone_ip": "127.0.0.1",
+  "drone_port": 5000,
+  "interval": 3,
+  "sensor_id": "air_quality_1",
+  "reconnect_attempts": 5,
+  "reconnect_interval": 5,
+  "data_mode": "normal",
+  "log_file": "logs/air_quality_1.log",
+  "co2_range": [300, 1000],
+  "pm25_range": [0, 150]
+}

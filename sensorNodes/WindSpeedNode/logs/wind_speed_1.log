@@ -1,0 +1,13 @@
+2025-05-18 19:20:19,157 - Connected to drone at 127.0.0.1:5000
+2025-05-18 19:20:19,157 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 29.36, "wind_direction": 54.31, "timestamp": "2025-05-18T19:20:19.157287"}
+2025-05-18 19:20:22,163 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 20.64, "wind_direction": 318.42, "timestamp": "2025-05-18T19:20:22.162517"}
+2025-05-18 19:20:25,169 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 28.04, "wind_direction": 283.51, "timestamp": "2025-05-18T19:20:25.169100"}
+2025-05-18 19:20:28,171 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 23.78, "wind_direction": 205.06, "timestamp": "2025-05-18T19:20:28.171162"}
+2025-05-18 19:20:31,176 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 2.86, "wind_direction": 107.61, "timestamp": "2025-05-18T19:20:31.175709"}
+2025-05-18 19:20:34,183 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 3.64, "wind_direction": 229.31, "timestamp": "2025-05-18T19:20:34.183118"}
+2025-05-18 19:20:37,184 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 16.24, "wind_direction": 52.07, "timestamp": "2025-05-18T19:20:37.184530"}
+2025-05-18 19:20:40,190 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 0.06, "wind_direction": 203.57, "timestamp": "2025-05-18T19:20:40.190482"}
+2025-05-18 19:20:43,191 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 25.15, "wind_direction": 103.34, "timestamp": "2025-05-18T19:20:43.191845"}
+2025-05-18 19:20:46,196 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 12.83, "wind_direction": 238.45, "timestamp": "2025-05-18T19:20:46.196033"}
+2025-05-18 19:20:49,202 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 17.19, "wind_direction": 168.58, "timestamp": "2025-05-18T19:20:49.201946"}
+2025-05-18 19:20:52,204 - Data sent: {"sensor_id": "wind_speed_1", "wind_speed": 12.57, "wind_direction": 357.23, "timestamp": "2025-05-18T19:20:52.204626"}

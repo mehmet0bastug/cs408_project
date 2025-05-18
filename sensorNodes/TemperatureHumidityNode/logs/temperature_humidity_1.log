@@ -1,0 +1,18 @@
+2025-05-18 19:20:18,672 - Connected to drone at 127.0.0.1:5000
+2025-05-18 19:20:18,673 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 21.53, "humidity": 12.37, "timestamp": "2025-05-18T19:20:18.672975"}
+2025-05-18 19:20:20,675 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": -8.94, "humidity": 33.17, "timestamp": "2025-05-18T19:20:20.675435"}
+2025-05-18 19:20:22,681 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 32.43, "humidity": 21.99, "timestamp": "2025-05-18T19:20:22.681356"}
+2025-05-18 19:20:24,685 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 47.21, "humidity": 13.6, "timestamp": "2025-05-18T19:20:24.685071"}
+2025-05-18 19:20:26,691 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 13.63, "humidity": 83.65, "timestamp": "2025-05-18T19:20:26.690976"}
+2025-05-18 19:20:28,697 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": -24.82, "humidity": 22.49, "timestamp": "2025-05-18T19:20:28.696963"}
+2025-05-18 19:20:30,700 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 57.77, "humidity": 66.16, "timestamp": "2025-05-18T19:20:30.700332"}
+2025-05-18 19:20:32,704 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 18.93, "humidity": 90.17, "timestamp": "2025-05-18T19:20:32.704398"}
+2025-05-18 19:20:34,708 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 28.16, "humidity": 19.65, "timestamp": "2025-05-18T19:20:34.708571"}
+2025-05-18 19:20:36,712 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": -4.55, "humidity": 76.27, "timestamp": "2025-05-18T19:20:36.712733"}
+2025-05-18 19:20:38,714 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 46.76, "humidity": 1.64, "timestamp": "2025-05-18T19:20:38.713310"}
+2025-05-18 19:20:40,719 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 55.34, "humidity": 55.15, "timestamp": "2025-05-18T19:20:40.719050"}
+2025-05-18 19:20:42,721 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": -23.11, "humidity": 68.09, "timestamp": "2025-05-18T19:20:42.720970"}
+2025-05-18 19:20:44,724 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 32.02, "humidity": 74.53, "timestamp": "2025-05-18T19:20:44.724138"}
+2025-05-18 19:20:46,727 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": -19.67, "humidity": 74.62, "timestamp": "2025-05-18T19:20:46.727015"}
+2025-05-18 19:20:48,730 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": 32.25, "humidity": 45.63, "timestamp": "2025-05-18T19:20:48.730268"}
+2025-05-18 19:20:50,734 - Data sent: {"sensor_id": "temperature_humidity_1", "temperature": -0.35, "humidity": 46.21, "timestamp": "2025-05-18T19:20:50.734475"}

@@ -1,0 +1,13 @@
+2025-05-18 19:20:18,096 - Connected to drone at 127.0.0.1:5000
+2025-05-18 19:20:18,096 - Data sent: {"sensor_id": "noise_level_1", "decibel": 86.56, "timestamp": "2025-05-18T19:20:18.096776"}
+2025-05-18 19:20:21,101 - Data sent: {"sensor_id": "noise_level_1", "decibel": 80.45, "timestamp": "2025-05-18T19:20:21.101334"}
+2025-05-18 19:20:24,104 - Data sent: {"sensor_id": "noise_level_1", "decibel": 72.9, "timestamp": "2025-05-18T19:20:24.104576"}
+2025-05-18 19:20:27,105 - Data sent: {"sensor_id": "noise_level_1", "decibel": 39.7, "timestamp": "2025-05-18T19:20:27.105509"}
+2025-05-18 19:20:30,112 - Data sent: {"sensor_id": "noise_level_1", "decibel": 96.99, "timestamp": "2025-05-18T19:20:30.111938"}
+2025-05-18 19:20:33,117 - Data sent: {"sensor_id": "noise_level_1", "decibel": 61.01, "timestamp": "2025-05-18T19:20:33.116946"}
+2025-05-18 19:20:36,118 - Data sent: {"sensor_id": "noise_level_1", "decibel": 57.58, "timestamp": "2025-05-18T19:20:36.118021"}
+2025-05-18 19:20:39,118 - Data sent: {"sensor_id": "noise_level_1", "decibel": 80.9, "timestamp": "2025-05-18T19:20:39.118854"}
+2025-05-18 19:20:42,122 - Data sent: {"sensor_id": "noise_level_1", "decibel": 59.02, "timestamp": "2025-05-18T19:20:42.121991"}
+2025-05-18 19:20:45,125 - Data sent: {"sensor_id": "noise_level_1", "decibel": 60.02, "timestamp": "2025-05-18T19:20:45.125162"}
+2025-05-18 19:20:48,130 - Data sent: {"sensor_id": "noise_level_1", "decibel": 52.49, "timestamp": "2025-05-18T19:20:48.130444"}
+2025-05-18 19:20:51,134 - Data sent: {"sensor_id": "noise_level_1", "decibel": 80.64, "timestamp": "2025-05-18T19:20:51.134252"}

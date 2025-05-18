@@ -16,14 +16,14 @@ def create_logger(sensor_id):
     logging.basicConfig(filename=log_filename, level=logging.INFO, format="%(asctime)s - %(message)s")
     return logging.getLogger(sensor_id)
 
-def generate_sensor_data(sensor_id, temp_range, humidity_range, mode):
+def generate_temp_humidity_data(sensor_id, temp_range, humidity_range, mode):
     if mode == "extreme":
         # Generate extreme values
         temp = random.choice([random.uniform(-50, -30), random.uniform(60, 80)])
         humidity = random.choice([random.uniform(-10, 0), random.uniform(100, 150)])
     elif mode == "disconnect":
-        # Return None to simulate a disconnect
-        if random.random() < 0.2:  # 20% chance of disconnect
+        # Simulate a disconnect
+        if random.random() < 0.2:
             return None
         temp = round(random.uniform(temp_range[0], temp_range[1]), 2)
         humidity = round(random.uniform(humidity_range[0], humidity_range[1]), 2)
@@ -67,20 +67,17 @@ def main():
             sock = connect_to_drone(drone_ip, drone_port, logger)
 
             while True:
-                # Generate data based on the current mode
-                data = generate_sensor_data(sensor_id, temp_range, humidity_range, mode)
+                data = generate_temp_humidity_data(sensor_id, temp_range, humidity_range, mode)
 
-                # Handle simulated disconnects
                 if data is None:
                     logger.warning(f"Simulating random disconnect for {sensor_id}")
                     print(f"🔌 Simulating random disconnect for {sensor_id}")
                     sock.close()
-                    time.sleep(10)  # Simulate a long disconnect
-                    break  # Exit inner loop to reconnect
+                    time.sleep(config["reconnect_interval"])
+                    break
 
-                # Send the data
                 message = json.dumps(data)
-                sock.sendall(message.encode())
+                sock.sendall((message + "\n").encode())
                 logger.info(f"Data sent: {message}")
                 print(f"Data sent: {message}")
                 time.sleep(interval)

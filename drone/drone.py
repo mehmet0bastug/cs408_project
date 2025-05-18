@@ -4,11 +4,18 @@ import json
 import os
 import logging
 from datetime import datetime
-from collections import deque
+from queue import Queue
 
 def load_config():
-    with open("config.json", "r") as file:
-        return json.load(file)
+    try:
+        with open("config.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("❌ Config file not found. Please provide a valid config.json.")
+        exit(1)
+    except json.JSONDecodeError as e:
+        print(f"❌ Error decoding config file: {e}")
+        exit(1)
 
 def create_logger(log_file):
     os.makedirs(os.path.dirname(log_file), exist_ok=True)
@@ -17,101 +24,138 @@ def create_logger(log_file):
 
 class DroneServer:
     def __init__(self, config, logger):
-        self.server_port = config["server_port"]
-        self.central_server_ip = config["central_server_ip"]
-        self.central_server_port = config["central_server_port"]
-        self.battery_threshold = config["battery_threshold"]
-        self.data_forward_interval = config["data_forward_interval"]
-        self.aggregation_window = config["aggregation_window"]
+        self.server_port = config.get("server_port", 5000)
+        self.aggregation_window = config.get("aggregation_window", 10)
         self.logger = logger
-        self.data_queue = deque(maxlen=self.aggregation_window)
-        self.lock = threading.Lock()
+        self.data_queue = Queue()
+        self.aggregation_thread = threading.Thread(target=self.aggregate_and_forward)
+        self.aggregation_thread.daemon = True
+        self.aggregation_thread.start()
 
     def start(self):
-        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server_socket.bind(("0.0.0.0", self.server_port))
-        server_socket.listen()
+        try:
+            server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            server_socket.bind(("0.0.0.0", self.server_port))
+            server_socket.listen()
 
-        self.logger.info(f"Drone server listening on port {self.server_port}")
-        print(f"Drone server listening on port {self.server_port}")
+            self.logger.info(f"Drone server listening on port {self.server_port}")
+            print(f"🚀 Drone server listening on port {self.server_port}")
 
-        while True:
-            client_socket, client_address = server_socket.accept()
-            client_thread = threading.Thread(target=self.handle_client, args=(client_socket, client_address))
-            client_thread.start()
+            while True:
+                try:
+                    client_socket, client_address = server_socket.accept()
+                    client_socket.settimeout(60)
+                    client_thread = threading.Thread(target=self.handle_client, args=(client_socket, client_address))
+                    client_thread.start()
+
+                except Exception as e:
+                    self.logger.error(f"Error accepting client connection: {e}")
+                    print(f"❌ Error accepting client connection: {e}")
+
+        except Exception as e:
+            self.logger.error(f"Error starting server: {e}")
+            print(f"❌ Error starting server: {e}")
+            exit(1)
 
     def handle_client(self, client_socket, client_address):
         self.logger.info(f"New connection from {client_address}")
+        buffer = b""
+
+        try:
+            while True:
+                try:
+                    chunk = client_socket.recv(1024)
+                    if not chunk:
+                        break
+                    buffer += chunk
+
+                    # Process complete JSON messages in the buffer
+                    while b"\n" in buffer:
+                        message, buffer = buffer.split(b"\n", 1)
+                        try:
+                            sensor_data = json.loads(message.decode().strip())
+                            self.data_queue.put(sensor_data)
+                            self.logger.info(f"Received data from {sensor_data['sensor_id']}: {sensor_data}")
+                            print(f"📥 From {sensor_data['sensor_id']}: {sensor_data}")
+
+                        except json.JSONDecodeError as e:
+                            self.logger.error(f"JSON decode error from {client_address}: {e}")
+                            print(f"❌ JSON decode error from {client_address}: {e}")
+
+                except socket.timeout:
+                    self.logger.warning(f"Connection timeout with {client_address}")
+                    print(f"⚠️ Connection timeout with {client_address}")
+                    break
+
+                except ConnectionResetError as e:
+                    self.logger.warning(f"Connection reset by {client_address}: {e}")
+                    print(f"⚠️ Connection reset by {client_address}: {e}")
+                    break
+
+                except Exception as e:
+                    self.logger.error(f"Unexpected error with {client_address}: {e}")
+                    print(f"❌ Unexpected error with {client_address}: {e}")
+                    break
+
+        finally:
+            client_socket.close()
+            self.logger.info(f"Connection closed with {client_address}")
+            print(f"🔌 Connection closed with {client_address}")
+
+    def aggregate_and_forward(self):
+        # Separate buffers for each sensor type
+        buffers = {
+            "temperature_humidity": [],
+            "air_quality": [],
+            "noise_level": [],
+            "wind_speed": []
+        }
 
         while True:
             try:
-                data = client_socket.recv(1024)
-                if not data:
-                    break
-                
-                # Decode the incoming data
-                message = data.decode()
-                sensor_data = json.loads(message)
+                data = self.data_queue.get()
 
-                # Log the incoming data
-                self.logger.info(f"Received data from {sensor_data['sensor_id']}: {sensor_data}")
-                print(f"From {sensor_data['sensor_id']}: {sensor_data}")
+                # Determine the sensor type
+                if "temperature" in data and "humidity" in data:
+                    buffers["temperature_humidity"].append(data)
 
-                # Add to aggregation queue
-                self.add_to_queue(sensor_data)
+                elif "co2" in data and "pm25" in data:
+                    buffers["air_quality"].append(data)
+
+                elif "decibel" in data:
+                    buffers["noise_level"].append(data)
+
+                elif "wind_speed" in data and "wind_direction" in data:
+                    buffers["wind_speed"].append(data)
+
+                # Check if any buffer is ready for aggregation
+                for sensor_type, buffer in buffers.items():
+                    if len(buffer) >= self.aggregation_window:
+                        # Calculate averages
+                        avg_data = {}
+                        for key in buffer[0].keys():
+                            if key not in ["sensor_id", "timestamp"]:
+                                avg_data[key] = round(sum(d[key] for d in buffer) / len(buffer), 2)
+
+                        # Create the aggregated message
+                        aggregated_data = {
+                            **avg_data,
+                            "timestamp": datetime.now().isoformat(),
+                            "data_points": len(buffer)
+                        }
+
+                        # Log the aggregation
+                        self.logger.info(f"✅ Aggregated data ({sensor_type}): {aggregated_data}")
+                        print(f"✅ Aggregated data ({sensor_type}): {aggregated_data}")
+
+                        # Clear the buffer for this sensor type
+                        buffers[sensor_type].clear()
 
             except Exception as e:
-                self.logger.error(f"Error with client {client_address}: {e}")
-                break
+                self.logger.error(f"Error during aggregation: {e}")
+                print(f"❌ Error during aggregation: {e}")
 
-        client_socket.close()
-        self.logger.info(f"Connection closed with {client_address}")
-
-    def add_to_queue(self, data):
-        with self.lock:
-            self.data_queue.append(data)
-            self.check_for_anomalies(data)
-
-            # Check if the aggregation window is full
-            if len(self.data_queue) == self.aggregation_window:
-                self.aggregate_and_forward()
-
-    def check_for_anomalies(self, data):
-        temp = data["temperature"]
-        humidity = data["humidity"]
-        sensor_id = data["sensor_id"]
-
-        # Simple anomaly detection
-        if temp < -30 or temp > 60:
-            self.logger.warning(f"Temperature anomaly from {sensor_id}: {temp}°C")
-            print(f"⚠️ Temperature anomaly from {sensor_id}: {temp}°C")
-        
-        if humidity < 0 or humidity > 100:
-            self.logger.warning(f"Humidity anomaly from {sensor_id}: {humidity}%")
-            print(f"⚠️ Humidity anomaly from {sensor_id}: {humidity}%")
-
-    def aggregate_and_forward(self):
-        with self.lock:
-            # Calculate averages
-            avg_temp = round(sum(d["temperature"] for d in self.data_queue) / len(self.data_queue), 2)
-            avg_humidity = round(sum(d["humidity"] for d in self.data_queue) / len(self.data_queue), 2)
-
-            # Create the aggregated message
-            aggregated_data = {
-                "average_temperature": avg_temp,
-                "average_humidity": avg_humidity,
-                "timestamp": datetime.now().isoformat(),
-                "data_points": len(self.data_queue)
-            }
-
-            # Log the aggregation
-            self.logger.info(f"Aggregated data: {aggregated_data}")
-            print(f"✅ Aggregated data: {aggregated_data}")
-
-            # Clear the data queue
-            self.data_queue.clear()
-
-            # (Optional) Forward to the central server (we'll implement this next)
 
 def main():
     config = load_config()

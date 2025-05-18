@@ -1,39 +1,105 @@
-2025-05-18 17:22:14,552 - Drone server listening on port 5000
-2025-05-18 17:22:17,122 - New connection from ('127.0.0.1', 65246)
-2025-05-18 17:22:17,122 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 8.14, 'humidity': 81.19, 'timestamp': '2025-05-18T17:22:17.122309'}
-2025-05-18 17:22:19,127 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 53.55, 'humidity': 72.41, 'timestamp': '2025-05-18T17:22:19.127095'}
-2025-05-18 17:22:21,132 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -12.68, 'humidity': 10.23, 'timestamp': '2025-05-18T17:22:21.132188'}
-2025-05-18 17:22:23,135 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -18.28, 'humidity': 29.89, 'timestamp': '2025-05-18T17:22:23.135245'}
-2025-05-18 17:22:25,140 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 11.22, 'humidity': 9.79, 'timestamp': '2025-05-18T17:22:25.140194'}
-2025-05-18 17:22:27,141 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -1.08, 'humidity': 57.74, 'timestamp': '2025-05-18T17:22:27.140727'}
-2025-05-18 17:22:27,831 - Connection closed with ('127.0.0.1', 65246)
-2025-05-18 17:24:52,876 - Drone server listening on port 5000
-2025-05-18 17:24:56,853 - New connection from ('127.0.0.1', 65251)
-2025-05-18 17:24:56,853 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -14.68, 'humidity': 16.42, 'timestamp': '2025-05-18T17:24:56.853411'}
-2025-05-18 17:24:58,858 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 44.94, 'humidity': 4.05, 'timestamp': '2025-05-18T17:24:58.857836'}
-2025-05-18 17:25:00,860 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 21.16, 'humidity': 90.7, 'timestamp': '2025-05-18T17:25:00.860162'}
-2025-05-18 17:25:02,862 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 17.18, 'humidity': 85.41, 'timestamp': '2025-05-18T17:25:02.861860'}
-2025-05-18 17:25:04,866 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 29.91, 'humidity': 29.38, 'timestamp': '2025-05-18T17:25:04.866045'}
-2025-05-18 17:25:06,871 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -2.38, 'humidity': 24.73, 'timestamp': '2025-05-18T17:25:06.870948'}
-2025-05-18 17:25:08,877 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 30.63, 'humidity': 42.17, 'timestamp': '2025-05-18T17:25:08.877147'}
-2025-05-18 17:25:08,921 - Connection closed with ('127.0.0.1', 65251)
-2025-05-18 17:25:25,747 - New connection from ('127.0.0.1', 65252)
-2025-05-18 17:25:25,747 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -38.17095124348293, 'humidity': 107.60271624768248, 'timestamp': '2025-05-18T17:25:25.747607'}
-2025-05-18 17:25:25,747 - Temperature anomaly from sensor1: -38.17095124348293°C
-2025-05-18 17:25:25,747 - Humidity anomaly from sensor1: 107.60271624768248%
-2025-05-18 17:25:27,750 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -31.257494564969438, 'humidity': 142.99679926746572, 'timestamp': '2025-05-18T17:25:27.749768'}
-2025-05-18 17:25:27,750 - Temperature anomaly from sensor1: -31.257494564969438°C
-2025-05-18 17:25:27,750 - Humidity anomaly from sensor1: 142.99679926746572%
-2025-05-18 17:25:29,753 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -31.655555025027784, 'humidity': 147.67625276324765, 'timestamp': '2025-05-18T17:25:29.752875'}
-2025-05-18 17:25:29,753 - Temperature anomaly from sensor1: -31.655555025027784°C
-2025-05-18 17:25:29,753 - Humidity anomaly from sensor1: 147.67625276324765%
-2025-05-18 17:26:08,760 - New connection from ('127.0.0.1', 65253)
-2025-05-18 17:26:08,760 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 58.71, 'humidity': 62.31, 'timestamp': '2025-05-18T17:26:08.760056'}
-2025-05-18 17:26:26,777 - New connection from ('127.0.0.1', 65254)
-2025-05-18 17:26:26,778 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -6.0, 'humidity': 56.94, 'timestamp': '2025-05-18T17:26:26.777643'}
-2025-05-18 17:26:50,808 - New connection from ('127.0.0.1', 65255)
-2025-05-18 17:26:50,808 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 13.18, 'humidity': 76.8, 'timestamp': '2025-05-18T17:26:50.808240'}
-2025-05-18 17:27:18,844 - New connection from ('127.0.0.1', 65256)
-2025-05-18 17:27:18,844 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 56.32, 'humidity': 52.7, 'timestamp': '2025-05-18T17:27:18.844142'}
-2025-05-18 17:27:32,857 - New connection from ('127.0.0.1', 65257)
-2025-05-18 17:27:32,857 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -18.47, 'humidity': 45.64, 'timestamp': '2025-05-18T17:27:32.857409'}
+2025-05-18 19:20:16,742 - Drone server listening on port 5000
+2025-05-18 19:20:17,097 - New connection from ('127.0.0.1', 49301)
+2025-05-18 19:20:17,098 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 497.33, 'pm25': 59.73, 'timestamp': '2025-05-18T19:20:17.097882'}
+2025-05-18 19:20:18,096 - New connection from ('127.0.0.1', 49302)
+2025-05-18 19:20:18,096 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.56, 'timestamp': '2025-05-18T19:20:18.096776'}
+2025-05-18 19:20:18,673 - New connection from ('127.0.0.1', 49303)
+2025-05-18 19:20:18,673 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 21.53, 'humidity': 12.37, 'timestamp': '2025-05-18T19:20:18.672975'}
+2025-05-18 19:20:19,157 - New connection from ('127.0.0.1', 49304)
+2025-05-18 19:20:19,157 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 29.36, 'wind_direction': 54.31, 'timestamp': '2025-05-18T19:20:19.157287'}
+2025-05-18 19:20:20,101 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 879.06, 'pm25': 112.21, 'timestamp': '2025-05-18T19:20:20.099149'}
+2025-05-18 19:20:20,676 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -8.94, 'humidity': 33.17, 'timestamp': '2025-05-18T19:20:20.675435'}
+2025-05-18 19:20:21,102 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 80.45, 'timestamp': '2025-05-18T19:20:21.101334'}
+2025-05-18 19:20:22,163 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 20.64, 'wind_direction': 318.42, 'timestamp': '2025-05-18T19:20:22.162517'}
+2025-05-18 19:20:22,681 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 32.43, 'humidity': 21.99, 'timestamp': '2025-05-18T19:20:22.681356'}
+2025-05-18 19:20:23,102 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 506.43, 'pm25': 34.32, 'timestamp': '2025-05-18T19:20:23.102520'}
+2025-05-18 19:20:24,104 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 72.9, 'timestamp': '2025-05-18T19:20:24.104576'}
+2025-05-18 19:20:24,685 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 47.21, 'humidity': 13.6, 'timestamp': '2025-05-18T19:20:24.685071'}
+2025-05-18 19:20:25,169 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 28.04, 'wind_direction': 283.51, 'timestamp': '2025-05-18T19:20:25.169100'}
+2025-05-18 19:20:26,105 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 659.86, 'pm25': 51.16, 'timestamp': '2025-05-18T19:20:26.105092'}
+2025-05-18 19:20:26,691 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 13.63, 'humidity': 83.65, 'timestamp': '2025-05-18T19:20:26.690976'}
+2025-05-18 19:20:27,106 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.7, 'timestamp': '2025-05-18T19:20:27.105509'}
+2025-05-18 19:20:28,171 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 23.78, 'wind_direction': 205.06, 'timestamp': '2025-05-18T19:20:28.171162'}
+2025-05-18 19:20:28,697 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -24.82, 'humidity': 22.49, 'timestamp': '2025-05-18T19:20:28.696963'}
+2025-05-18 19:20:29,110 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 416.91, 'pm25': 71.01, 'timestamp': '2025-05-18T19:20:29.110006'}
+2025-05-18 19:20:30,112 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 96.99, 'timestamp': '2025-05-18T19:20:30.111938'}
+2025-05-18 19:20:30,701 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 57.77, 'humidity': 66.16, 'timestamp': '2025-05-18T19:20:30.700332'}
+2025-05-18 19:20:31,177 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.86, 'wind_direction': 107.61, 'timestamp': '2025-05-18T19:20:31.175709'}
+2025-05-18 19:20:32,114 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 652.51, 'pm25': 76.0, 'timestamp': '2025-05-18T19:20:32.113406'}
+2025-05-18 19:20:32,704 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 18.93, 'humidity': 90.17, 'timestamp': '2025-05-18T19:20:32.704398'}
+2025-05-18 19:20:33,117 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 61.01, 'timestamp': '2025-05-18T19:20:33.116946'}
+2025-05-18 19:20:34,183 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 3.64, 'wind_direction': 229.31, 'timestamp': '2025-05-18T19:20:34.183118'}
+2025-05-18 19:20:34,709 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 28.16, 'humidity': 19.65, 'timestamp': '2025-05-18T19:20:34.708571'}
+2025-05-18 19:20:35,116 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 627.73, 'pm25': 21.54, 'timestamp': '2025-05-18T19:20:35.116033'}
+2025-05-18 19:20:36,118 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 57.58, 'timestamp': '2025-05-18T19:20:36.118021'}
+2025-05-18 19:20:36,713 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -4.55, 'humidity': 76.27, 'timestamp': '2025-05-18T19:20:36.712733'}
+2025-05-18 19:20:36,713 - ✅ Aggregated data (temperature_humidity): {'temperature': 18.13, 'humidity': 43.95, 'timestamp': '2025-05-18T19:20:36.713203', 'data_points': 10}
+2025-05-18 19:20:37,185 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.24, 'wind_direction': 52.07, 'timestamp': '2025-05-18T19:20:37.184530'}
+2025-05-18 19:20:38,116 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 667.08, 'pm25': 9.02, 'timestamp': '2025-05-18T19:20:38.116704'}
+2025-05-18 19:20:38,718 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 46.76, 'humidity': 1.64, 'timestamp': '2025-05-18T19:20:38.713310'}
+2025-05-18 19:20:39,119 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 80.9, 'timestamp': '2025-05-18T19:20:39.118854'}
+2025-05-18 19:20:40,190 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.06, 'wind_direction': 203.57, 'timestamp': '2025-05-18T19:20:40.190482'}
+2025-05-18 19:20:40,719 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 55.34, 'humidity': 55.15, 'timestamp': '2025-05-18T19:20:40.719050'}
+2025-05-18 19:20:41,123 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 956.9, 'pm25': 19.62, 'timestamp': '2025-05-18T19:20:41.121063'}
+2025-05-18 19:20:42,122 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 59.02, 'timestamp': '2025-05-18T19:20:42.121991'}
+2025-05-18 19:20:42,721 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -23.11, 'humidity': 68.09, 'timestamp': '2025-05-18T19:20:42.720970'}
+2025-05-18 19:20:43,192 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 25.15, 'wind_direction': 103.34, 'timestamp': '2025-05-18T19:20:43.191845'}
+2025-05-18 19:20:44,129 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 487.03, 'pm25': 20.58, 'timestamp': '2025-05-18T19:20:44.128948'}
+2025-05-18 19:20:44,129 - ✅ Aggregated data (air_quality): {'co2': 635.08, 'pm25': 47.52, 'timestamp': '2025-05-18T19:20:44.129238', 'data_points': 10}
+2025-05-18 19:20:44,725 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 32.02, 'humidity': 74.53, 'timestamp': '2025-05-18T19:20:44.724138'}
+2025-05-18 19:20:45,125 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.02, 'timestamp': '2025-05-18T19:20:45.125162'}
+2025-05-18 19:20:45,125 - ✅ Aggregated data (noise_level): {'decibel': 69.51, 'timestamp': '2025-05-18T19:20:45.125536', 'data_points': 10}
+2025-05-18 19:20:46,196 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 12.83, 'wind_direction': 238.45, 'timestamp': '2025-05-18T19:20:46.196033'}
+2025-05-18 19:20:46,197 - ✅ Aggregated data (wind_speed): {'wind_speed': 16.26, 'wind_direction': 179.56, 'timestamp': '2025-05-18T19:20:46.197835', 'data_points': 10}
+2025-05-18 19:20:46,727 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -19.67, 'humidity': 74.62, 'timestamp': '2025-05-18T19:20:46.727015'}
+2025-05-18 19:20:47,131 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 756.96, 'pm25': 98.86, 'timestamp': '2025-05-18T19:20:47.130399'}
+2025-05-18 19:20:48,130 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 52.49, 'timestamp': '2025-05-18T19:20:48.130444'}
+2025-05-18 19:20:48,731 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 32.25, 'humidity': 45.63, 'timestamp': '2025-05-18T19:20:48.730268'}
+2025-05-18 19:20:49,202 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 17.19, 'wind_direction': 168.58, 'timestamp': '2025-05-18T19:20:49.201946'}
+2025-05-18 19:20:50,137 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 786.59, 'pm25': 147.98, 'timestamp': '2025-05-18T19:20:50.136717'}
+2025-05-18 19:20:50,735 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -0.35, 'humidity': 46.21, 'timestamp': '2025-05-18T19:20:50.734475'}
+2025-05-18 19:20:50,831 - Connection closed with ('127.0.0.1', 49301)
+2025-05-18 19:20:51,134 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 80.64, 'timestamp': '2025-05-18T19:20:51.134252'}
+2025-05-18 19:20:51,428 - Connection closed with ('127.0.0.1', 49302)
+2025-05-18 19:20:52,037 - Connection closed with ('127.0.0.1', 49303)
+2025-05-18 19:20:52,204 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 12.57, 'wind_direction': 357.23, 'timestamp': '2025-05-18T19:20:52.204626'}
+2025-05-18 19:20:52,713 - Connection closed with ('127.0.0.1', 49304)
+2025-05-18 19:38:14,916 - Drone server listening on port 5000
+2025-05-18 19:38:18,774 - New connection from ('127.0.0.1', 49336)
+2025-05-18 19:38:18,774 - Connection closed with ('127.0.0.1', 49336)
+2025-05-18 19:38:18,774 - New connection from ('127.0.0.1', 49337)
+2025-05-18 19:38:18,774 - Connection closed with ('127.0.0.1', 49337)
+2025-05-18 19:38:23,137 - New connection from ('127.0.0.1', 49338)
+2025-05-18 19:38:23,137 - Connection closed with ('127.0.0.1', 49338)
+2025-05-18 19:38:23,137 - New connection from ('127.0.0.1', 49339)
+2025-05-18 19:38:23,137 - Connection closed with ('127.0.0.1', 49339)
+2025-05-18 19:43:15,095 - Drone server listening on port 5000
+2025-05-18 19:46:17,756 - Drone server listening on port 5000
+2025-05-18 19:46:20,741 - New connection from ('127.0.0.1', 49345)
+2025-05-18 19:46:20,741 - Connection closed with ('127.0.0.1', 49345)
+2025-05-18 19:46:20,741 - New connection from ('127.0.0.1', 49346)
+2025-05-18 19:46:20,741 - Connection closed with ('127.0.0.1', 49346)
+2025-05-18 19:46:20,741 - New connection from ('127.0.0.1', 49347)
+2025-05-18 19:46:20,741 - Connection closed with ('127.0.0.1', 49347)
+2025-05-18 19:46:20,742 - New connection from ('127.0.0.1', 49348)
+2025-05-18 19:46:20,742 - Connection closed with ('127.0.0.1', 49348)
+2025-05-18 19:47:58,993 - New connection from ('127.0.0.1', 49350)
+2025-05-18 19:47:58,994 - Connection closed with ('127.0.0.1', 49350)
+2025-05-18 19:47:58,995 - New connection from ('127.0.0.1', 49351)
+2025-05-18 19:47:58,995 - Connection closed with ('127.0.0.1', 49351)
+2025-05-18 19:47:58,995 - New connection from ('127.0.0.1', 49352)
+2025-05-18 19:47:58,995 - Connection closed with ('127.0.0.1', 49352)
+2025-05-18 19:47:58,995 - New connection from ('127.0.0.1', 49353)
+2025-05-18 19:47:58,995 - Connection closed with ('127.0.0.1', 49353)
+2025-05-18 19:48:31,939 - New connection from ('127.0.0.1', 49354)
+2025-05-18 19:48:31,939 - Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'timestamp': '2025-05-18T19:45:00', 'co2': 400.0, 'pm25': 15.0}
+2025-05-18 19:48:31,939 - Connection closed with ('127.0.0.1', 49354)
+2025-05-18 19:48:31,939 - New connection from ('127.0.0.1', 49355)
+2025-05-18 19:48:31,939 - Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'timestamp': '2025-05-18T19:45:00', 'decibel': 60.0}
+2025-05-18 19:48:31,939 - Connection closed with ('127.0.0.1', 49355)
+2025-05-18 19:48:31,939 - New connection from ('127.0.0.1', 49356)
+2025-05-18 19:48:31,939 - Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'timestamp': '2025-05-18T19:45:00', 'temperature': 25.5, 'humidity': 60.0}
+2025-05-18 19:48:31,939 - Connection closed with ('127.0.0.1', 49356)
+2025-05-18 19:48:31,940 - New connection from ('127.0.0.1', 49357)
+2025-05-18 19:48:31,940 - Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'timestamp': '2025-05-18T19:45:00', 'wind_speed': 12.5, 'wind_direction': 180.0}
+2025-05-18 19:48:31,940 - Connection closed with ('127.0.0.1', 49357)

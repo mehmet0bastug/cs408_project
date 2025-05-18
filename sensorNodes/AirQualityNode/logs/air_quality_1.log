@@ -1,0 +1,13 @@
+2025-05-18 19:20:17,097 - Connected to drone at 127.0.0.1:5000
+2025-05-18 19:20:17,097 - Data sent: {"sensor_id": "air_quality_1", "co2": 497.33, "pm25": 59.73, "timestamp": "2025-05-18T19:20:17.097882"}
+2025-05-18 19:20:20,100 - Data sent: {"sensor_id": "air_quality_1", "co2": 879.06, "pm25": 112.21, "timestamp": "2025-05-18T19:20:20.099149"}
+2025-05-18 19:20:23,102 - Data sent: {"sensor_id": "air_quality_1", "co2": 506.43, "pm25": 34.32, "timestamp": "2025-05-18T19:20:23.102520"}
+2025-05-18 19:20:26,105 - Data sent: {"sensor_id": "air_quality_1", "co2": 659.86, "pm25": 51.16, "timestamp": "2025-05-18T19:20:26.105092"}
+2025-05-18 19:20:29,110 - Data sent: {"sensor_id": "air_quality_1", "co2": 416.91, "pm25": 71.01, "timestamp": "2025-05-18T19:20:29.110006"}
+2025-05-18 19:20:32,114 - Data sent: {"sensor_id": "air_quality_1", "co2": 652.51, "pm25": 76.0, "timestamp": "2025-05-18T19:20:32.113406"}
+2025-05-18 19:20:35,116 - Data sent: {"sensor_id": "air_quality_1", "co2": 627.73, "pm25": 21.54, "timestamp": "2025-05-18T19:20:35.116033"}
+2025-05-18 19:20:38,116 - Data sent: {"sensor_id": "air_quality_1", "co2": 667.08, "pm25": 9.02, "timestamp": "2025-05-18T19:20:38.116704"}
+2025-05-18 19:20:41,121 - Data sent: {"sensor_id": "air_quality_1", "co2": 956.9, "pm25": 19.62, "timestamp": "2025-05-18T19:20:41.121063"}
+2025-05-18 19:20:44,129 - Data sent: {"sensor_id": "air_quality_1", "co2": 487.03, "pm25": 20.58, "timestamp": "2025-05-18T19:20:44.128948"}
+2025-05-18 19:20:47,131 - Data sent: {"sensor_id": "air_quality_1", "co2": 756.96, "pm25": 98.86, "timestamp": "2025-05-18T19:20:47.130399"}
+2025-05-18 19:20:50,136 - Data sent: {"sensor_id": "air_quality_1", "co2": 786.59, "pm25": 147.98, "timestamp": "2025-05-18T19:20:50.136717"}
