@@ -1,0 +1,12 @@
+{
+  "drone_ip": "127.0.0.1",
+  "drone_port": 5000,
+  "interval": 2,
+  "sensor_id": "sensor1",
+  "reconnect_attempts": 5,
+  "reconnect_interval": 5,
+  "data_mode": "disconnect",  
+  "log_file": "logs/sensor1.log",
+  "temperature_range": [-30, 60],
+  "humidity_range": [0, 100]
+}

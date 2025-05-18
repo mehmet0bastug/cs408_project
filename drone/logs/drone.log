@@ -1,0 +1,39 @@
+2025-05-18 17:22:14,552 - Drone server listening on port 5000
+2025-05-18 17:22:17,122 - New connection from ('127.0.0.1', 65246)
+2025-05-18 17:22:17,122 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 8.14, 'humidity': 81.19, 'timestamp': '2025-05-18T17:22:17.122309'}
+2025-05-18 17:22:19,127 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 53.55, 'humidity': 72.41, 'timestamp': '2025-05-18T17:22:19.127095'}
+2025-05-18 17:22:21,132 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -12.68, 'humidity': 10.23, 'timestamp': '2025-05-18T17:22:21.132188'}
+2025-05-18 17:22:23,135 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -18.28, 'humidity': 29.89, 'timestamp': '2025-05-18T17:22:23.135245'}
+2025-05-18 17:22:25,140 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 11.22, 'humidity': 9.79, 'timestamp': '2025-05-18T17:22:25.140194'}
+2025-05-18 17:22:27,141 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -1.08, 'humidity': 57.74, 'timestamp': '2025-05-18T17:22:27.140727'}
+2025-05-18 17:22:27,831 - Connection closed with ('127.0.0.1', 65246)
+2025-05-18 17:24:52,876 - Drone server listening on port 5000
+2025-05-18 17:24:56,853 - New connection from ('127.0.0.1', 65251)
+2025-05-18 17:24:56,853 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -14.68, 'humidity': 16.42, 'timestamp': '2025-05-18T17:24:56.853411'}
+2025-05-18 17:24:58,858 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 44.94, 'humidity': 4.05, 'timestamp': '2025-05-18T17:24:58.857836'}
+2025-05-18 17:25:00,860 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 21.16, 'humidity': 90.7, 'timestamp': '2025-05-18T17:25:00.860162'}
+2025-05-18 17:25:02,862 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 17.18, 'humidity': 85.41, 'timestamp': '2025-05-18T17:25:02.861860'}
+2025-05-18 17:25:04,866 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 29.91, 'humidity': 29.38, 'timestamp': '2025-05-18T17:25:04.866045'}
+2025-05-18 17:25:06,871 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -2.38, 'humidity': 24.73, 'timestamp': '2025-05-18T17:25:06.870948'}
+2025-05-18 17:25:08,877 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 30.63, 'humidity': 42.17, 'timestamp': '2025-05-18T17:25:08.877147'}
+2025-05-18 17:25:08,921 - Connection closed with ('127.0.0.1', 65251)
+2025-05-18 17:25:25,747 - New connection from ('127.0.0.1', 65252)
+2025-05-18 17:25:25,747 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -38.17095124348293, 'humidity': 107.60271624768248, 'timestamp': '2025-05-18T17:25:25.747607'}
+2025-05-18 17:25:25,747 - Temperature anomaly from sensor1: -38.17095124348293°C
+2025-05-18 17:25:25,747 - Humidity anomaly from sensor1: 107.60271624768248%
+2025-05-18 17:25:27,750 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -31.257494564969438, 'humidity': 142.99679926746572, 'timestamp': '2025-05-18T17:25:27.749768'}
+2025-05-18 17:25:27,750 - Temperature anomaly from sensor1: -31.257494564969438°C
+2025-05-18 17:25:27,750 - Humidity anomaly from sensor1: 142.99679926746572%
+2025-05-18 17:25:29,753 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -31.655555025027784, 'humidity': 147.67625276324765, 'timestamp': '2025-05-18T17:25:29.752875'}
+2025-05-18 17:25:29,753 - Temperature anomaly from sensor1: -31.655555025027784°C
+2025-05-18 17:25:29,753 - Humidity anomaly from sensor1: 147.67625276324765%
+2025-05-18 17:26:08,760 - New connection from ('127.0.0.1', 65253)
+2025-05-18 17:26:08,760 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 58.71, 'humidity': 62.31, 'timestamp': '2025-05-18T17:26:08.760056'}
+2025-05-18 17:26:26,777 - New connection from ('127.0.0.1', 65254)
+2025-05-18 17:26:26,778 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -6.0, 'humidity': 56.94, 'timestamp': '2025-05-18T17:26:26.777643'}
+2025-05-18 17:26:50,808 - New connection from ('127.0.0.1', 65255)
+2025-05-18 17:26:50,808 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 13.18, 'humidity': 76.8, 'timestamp': '2025-05-18T17:26:50.808240'}
+2025-05-18 17:27:18,844 - New connection from ('127.0.0.1', 65256)
+2025-05-18 17:27:18,844 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': 56.32, 'humidity': 52.7, 'timestamp': '2025-05-18T17:27:18.844142'}
+2025-05-18 17:27:32,857 - New connection from ('127.0.0.1', 65257)
+2025-05-18 17:27:32,857 - Received data from sensor1: {'sensor_id': 'sensor1', 'temperature': -18.47, 'humidity': 45.64, 'timestamp': '2025-05-18T17:27:32.857409'}

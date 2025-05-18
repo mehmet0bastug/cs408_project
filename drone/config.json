@@ -1,0 +1,9 @@
+{
+  "server_port": 5000,
+  "central_server_ip": "127.0.0.1",
+  "central_server_port": 6000,
+  "battery_threshold": 20,
+  "data_forward_interval": 5,
+  "aggregation_window": 10,
+  "log_file": "logs/drone.log"
+}
