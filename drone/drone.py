@@ -31,6 +31,9 @@ class DroneServer:
         self.aggregation_thread = threading.Thread(target=self.aggregate_and_forward)
         self.aggregation_thread.daemon = True
         self.aggregation_thread.start()
+        self.central_server_ip = config.get("central_server_ip", "127.0.0.1")
+        self.central_server_port = config.get("central_server_port", 6000)
+
 
     def start(self):
         try:
@@ -57,7 +60,7 @@ class DroneServer:
             self.logger.error(f"Error starting server: {e}")
             print(f"❌ Error starting server: {e}")
             exit(1)
-
+    
     def handle_client(self, client_socket, client_address):
         self.logger.info(f"New connection from {client_address}")
         buffer = b""
@@ -148,6 +151,7 @@ class DroneServer:
                         # Log the aggregation
                         self.logger.info(f"✅ Aggregated data ({sensor_type}): {aggregated_data}")
                         print(f"✅ Aggregated data ({sensor_type}): {aggregated_data}")
+                        self.send_to_central_server(aggregated_data)
 
                         # Clear the buffer for this sensor type
                         buffers[sensor_type].clear()
@@ -155,6 +159,17 @@ class DroneServer:
             except Exception as e:
                 self.logger.error(f"Error during aggregation: {e}")
                 print(f"❌ Error during aggregation: {e}")
+                
+    def send_to_central_server(self, data):
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.connect((self.central_server_ip, self.central_server_port))
+            s.sendall((json.dumps(data) + "\n").encode())
+            self.logger.info("📤 Sent aggregated data to central server")
+    except Exception as e:
+        self.logger.error(f"❌ Failed to send data to central server: {e}")
+        print(f"❌ Failed to send data to central server: {e}")
+
 
 
 def main():
