@@ -1,0 +1,4 @@
+{
+  "serverPort": 6000,
+  "logFile": "centralServer.log"
+}
