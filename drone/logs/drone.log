@@ -1,710 +1,114 @@
-2025-05-18 23:16:52,600 - 🚀 Drone server listening on port 5000
-2025-05-18 23:16:55,976 - 📶 New connection from ('127.0.0.1', 50230)
-2025-05-18 23:16:55,976 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 720.12, 'pm25': 141.86, 'timestamp': '2025-05-18T23:16:55.976487'}
-2025-05-18 23:16:58,642 - 📶 New connection from ('127.0.0.1', 50231)
-2025-05-18 23:16:58,643 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 32.0, 'timestamp': '2025-05-18T23:16:58.642803'}
-2025-05-18 23:16:58,981 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 340.18, 'pm25': 135.88, 'timestamp': '2025-05-18T23:16:58.980549'}
-2025-05-18 23:17:00,969 - 📶 New connection from ('127.0.0.1', 50232)
-2025-05-18 23:17:00,969 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -14.03, 'humidity': 58.83, 'timestamp': '2025-05-18T23:17:00.969083'}
-2025-05-18 23:17:01,643 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 62.15, 'timestamp': '2025-05-18T23:17:01.643125'}
-2025-05-18 23:17:01,982 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 798.79, 'pm25': 53.59, 'timestamp': '2025-05-18T23:17:01.982588'}
-2025-05-18 23:17:02,975 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 30.32, 'humidity': 11.33, 'timestamp': '2025-05-18T23:17:02.974272'}
-2025-05-18 23:17:03,798 - 📶 New connection from ('127.0.0.1', 50233)
-2025-05-18 23:17:03,798 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 15.82, 'wind_direction': 79.62, 'timestamp': '2025-05-18T23:17:03.797959'}
-2025-05-18 23:17:04,647 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.34, 'timestamp': '2025-05-18T23:17:04.646668'}
-2025-05-18 23:17:04,980 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 27.86, 'humidity': 82.84, 'timestamp': '2025-05-18T23:17:04.979639'}
-2025-05-18 23:17:04,988 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 882.43, 'pm25': 139.73, 'timestamp': '2025-05-18T23:17:04.987845'}
-2025-05-18 23:17:06,803 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 7.48, 'wind_direction': 274.13, 'timestamp': '2025-05-18T23:17:06.803205'}
-2025-05-18 23:17:06,980 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 14.11, 'humidity': 13.67, 'timestamp': '2025-05-18T23:17:06.980429'}
-2025-05-18 23:17:07,652 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 98.11, 'timestamp': '2025-05-18T23:17:07.651470'}
-2025-05-18 23:17:07,993 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 455.64, 'pm25': 66.78, 'timestamp': '2025-05-18T23:17:07.993169'}
-2025-05-18 23:17:08,983 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 37.68, 'humidity': 71.4, 'timestamp': '2025-05-18T23:17:08.983518'}
-2025-05-18 23:17:09,809 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 25.08, 'wind_direction': 234.63, 'timestamp': '2025-05-18T23:17:09.809242'}
-2025-05-18 23:17:10,657 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 76.22, 'timestamp': '2025-05-18T23:17:10.657324'}
-2025-05-18 23:17:10,988 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -18.48, 'humidity': 21.25, 'timestamp': '2025-05-18T23:17:10.988386'}
-2025-05-18 23:17:10,996 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 792.73, 'pm25': 62.61, 'timestamp': '2025-05-18T23:17:10.996697'}
-2025-05-18 23:17:12,812 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.76, 'wind_direction': 229.46, 'timestamp': '2025-05-18T23:17:12.811999'}
-2025-05-18 23:17:12,993 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 41.09, 'humidity': 25.51, 'timestamp': '2025-05-18T23:17:12.993035'}
-2025-05-18 23:17:13,663 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 70.71, 'timestamp': '2025-05-18T23:17:13.662792'}
-2025-05-18 23:17:14,000 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 580.25, 'pm25': 96.85, 'timestamp': '2025-05-18T23:17:14.000329'}
-2025-05-18 23:17:14,999 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.27, 'humidity': 36.37, 'timestamp': '2025-05-18T23:17:14.998402'}
-2025-05-18 23:17:15,815 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 25.31, 'wind_direction': 14.03, 'timestamp': '2025-05-18T23:17:15.814999'}
-2025-05-18 23:17:16,668 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 97.88, 'timestamp': '2025-05-18T23:17:16.668651'}
-2025-05-18 23:17:17,002 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 36.4, 'humidity': 74.63, 'timestamp': '2025-05-18T23:17:17.002720'}
-2025-05-18 23:17:17,003 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 671.19, 'pm25': 123.06, 'timestamp': '2025-05-18T23:17:17.002860'}
-2025-05-18 23:17:18,822 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 3.19, 'wind_direction': 210.58, 'timestamp': '2025-05-18T23:17:18.821233'}
-2025-05-18 23:17:19,005 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 15.79, 'humidity': 65.61, 'timestamp': '2025-05-18T23:17:19.004558'}
-2025-05-18 23:17:19,005 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 18.0, 'humidity': 46.14, 'timestamp': '2025-05-18T23:17:19.005554', 'data_points': 10}
-2025-05-18 23:17:19,006 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:19,671 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.91, 'timestamp': '2025-05-18T23:17:19.671192'}
-2025-05-18 23:17:20,008 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 799.03, 'pm25': 67.7, 'timestamp': '2025-05-18T23:17:20.008158'}
-2025-05-18 23:17:21,010 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 27.16, 'humidity': 4.67, 'timestamp': '2025-05-18T23:17:21.010428'}
-2025-05-18 23:17:21,826 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 1.98, 'wind_direction': 308.2, 'timestamp': '2025-05-18T23:17:21.825996'}
-2025-05-18 23:17:22,677 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 42.78, 'timestamp': '2025-05-18T23:17:22.676408'}
-2025-05-18 23:17:23,010 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 791.78, 'pm25': 81.18, 'timestamp': '2025-05-18T23:17:23.010460'}
-2025-05-18 23:17:23,010 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 683.21, 'pm25': 96.92, 'timestamp': '2025-05-18T23:17:23.010740', 'data_points': 10}
-2025-05-18 23:17:23,011 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:23,012 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -6.59, 'humidity': 50.78, 'timestamp': '2025-05-18T23:17:23.012799'}
-2025-05-18 23:17:24,827 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 17.23, 'wind_direction': 345.4, 'timestamp': '2025-05-18T23:17:24.826308'}
-2025-05-18 23:17:25,020 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -14.3, 'humidity': 45.2, 'timestamp': '2025-05-18T23:17:25.017521'}
-2025-05-18 23:17:25,680 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 40.31, 'timestamp': '2025-05-18T23:17:25.680157'}
-2025-05-18 23:17:25,680 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 62.74, 'timestamp': '2025-05-18T23:17:25.680519', 'data_points': 10}
-2025-05-18 23:17:25,680 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:26,016 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 801.81, 'pm25': 139.27, 'timestamp': '2025-05-18T23:17:26.015717'}
-2025-05-18 23:17:27,025 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -7.34, 'humidity': 34.72, 'timestamp': '2025-05-18T23:17:27.025293'}
-2025-05-18 23:17:27,833 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 15.66, 'wind_direction': 172.07, 'timestamp': '2025-05-18T23:17:27.832636'}
-2025-05-18 23:17:28,684 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 65.01, 'timestamp': '2025-05-18T23:17:28.683667'}
-2025-05-18 23:17:29,017 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 602.68, 'pm25': 50.01, 'timestamp': '2025-05-18T23:17:29.016993'}
-2025-05-18 23:17:29,030 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 38.94, 'humidity': 87.17, 'timestamp': '2025-05-18T23:17:29.030006'}
-2025-05-18 23:17:30,836 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.29, 'wind_direction': 323.7, 'timestamp': '2025-05-18T23:17:30.835678'}
-2025-05-18 23:17:30,836 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 15.48, 'wind_direction': 219.18, 'timestamp': '2025-05-18T23:17:30.836110', 'data_points': 10}
-2025-05-18 23:17:30,836 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:31,031 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -2.64, 'humidity': 38.6, 'timestamp': '2025-05-18T23:17:31.031549'}
-2025-05-18 23:17:31,685 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 75.98, 'timestamp': '2025-05-18T23:17:31.685514'}
-2025-05-18 23:17:32,549 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 647.45, 'pm25': 149.66, 'timestamp': '2025-05-18T23:17:32.018017'}
-2025-05-18 23:17:33,033 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 36.55, 'humidity': 79.35, 'timestamp': '2025-05-18T23:17:33.032850'}
-2025-05-18 23:17:33,840 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 29.25, 'wind_direction': 97.93, 'timestamp': '2025-05-18T23:17:33.839882'}
-2025-05-18 23:17:34,688 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 46.86, 'timestamp': '2025-05-18T23:17:34.688524'}
-2025-05-18 23:17:35,019 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 531.77, 'pm25': 5.17, 'timestamp': '2025-05-18T23:17:35.018843'}
-2025-05-18 23:17:35,035 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -21.78, 'humidity': 83.85, 'timestamp': '2025-05-18T23:17:35.034647'}
-2025-05-18 23:17:36,845 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 15.33, 'wind_direction': 186.14, 'timestamp': '2025-05-18T23:17:36.845065'}
-2025-05-18 23:17:37,038 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 19.85, 'humidity': 10.33, 'timestamp': '2025-05-18T23:17:37.038155'}
-2025-05-18 23:17:37,690 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.53, 'timestamp': '2025-05-18T23:17:37.690192'}
-2025-05-18 23:17:38,021 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 502.04, 'pm25': 115.83, 'timestamp': '2025-05-18T23:17:38.021148'}
-2025-05-18 23:17:39,039 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -9.44, 'humidity': 70.15, 'timestamp': '2025-05-18T23:17:39.038829'}
-2025-05-18 23:17:39,039 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 6.04, 'humidity': 50.48, 'timestamp': '2025-05-18T23:17:39.039634', 'data_points': 10}
-2025-05-18 23:17:39,040 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:39,849 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.01, 'wind_direction': 210.99, 'timestamp': '2025-05-18T23:17:39.848823'}
-2025-05-18 23:17:40,695 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 94.61, 'timestamp': '2025-05-18T23:17:40.695457'}
-2025-05-18 23:17:41,026 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 308.25, 'pm25': 100.33, 'timestamp': '2025-05-18T23:17:41.026445'}
-2025-05-18 23:17:41,041 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 33.75, 'humidity': 51.43, 'timestamp': '2025-05-18T23:17:41.040874'}
-2025-05-18 23:17:42,850 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 20.9, 'wind_direction': 113.18, 'timestamp': '2025-05-18T23:17:42.849892'}
-2025-05-18 23:17:43,045 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 23.17, 'humidity': 26.92, 'timestamp': '2025-05-18T23:17:43.044965'}
-2025-05-18 23:17:43,701 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 68.36, 'timestamp': '2025-05-18T23:17:43.700923'}
-2025-05-18 23:17:44,028 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 340.69, 'pm25': 57.64, 'timestamp': '2025-05-18T23:17:44.027598'}
-2025-05-18 23:17:45,051 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -7.42, 'humidity': 88.91, 'timestamp': '2025-05-18T23:17:45.050278'}
-2025-05-18 23:17:45,852 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 25.1, 'wind_direction': 1.77, 'timestamp': '2025-05-18T23:17:45.851408'}
-2025-05-18 23:17:46,705 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 83.34, 'timestamp': '2025-05-18T23:17:46.705689'}
-2025-05-18 23:17:47,034 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 703.68, 'pm25': 95.84, 'timestamp': '2025-05-18T23:17:47.033542'}
-2025-05-18 23:17:47,057 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 7.37, 'humidity': 87.89, 'timestamp': '2025-05-18T23:17:47.055878'}
-2025-05-18 23:17:48,855 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.37, 'wind_direction': 314.06, 'timestamp': '2025-05-18T23:17:48.854733'}
-2025-05-18 23:17:49,062 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.5, 'humidity': 54.25, 'timestamp': '2025-05-18T23:17:49.060592'}
-2025-05-18 23:17:49,708 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 87.99, 'timestamp': '2025-05-18T23:17:49.708551'}
-2025-05-18 23:17:50,036 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 364.49, 'pm25': 90.82, 'timestamp': '2025-05-18T23:17:50.035777'}
-2025-05-18 23:17:51,067 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 21.01, 'humidity': 86.03, 'timestamp': '2025-05-18T23:17:51.066824'}
-2025-05-18 23:17:51,859 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.9, 'wind_direction': 160.94, 'timestamp': '2025-05-18T23:17:51.859486'}
-2025-05-18 23:17:52,711 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 45.83, 'timestamp': '2025-05-18T23:17:52.710690'}
-2025-05-18 23:17:53,041 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 949.66, 'pm25': 136.31, 'timestamp': '2025-05-18T23:17:53.041110'}
-2025-05-18 23:17:53,042 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 575.25, 'pm25': 94.09, 'timestamp': '2025-05-18T23:17:53.042116', 'data_points': 10}
-2025-05-18 23:17:53,043 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:53,071 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 46.36, 'humidity': 30.89, 'timestamp': '2025-05-18T23:17:53.070673'}
-2025-05-18 23:17:54,861 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 29.43, 'wind_direction': 306.06, 'timestamp': '2025-05-18T23:17:54.860986'}
-2025-05-18 23:17:55,074 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 16.39, 'humidity': 40.78, 'timestamp': '2025-05-18T23:17:55.074685'}
-2025-05-18 23:17:55,714 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.67, 'timestamp': '2025-05-18T23:17:55.714212'}
-2025-05-18 23:17:55,715 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 67.62, 'timestamp': '2025-05-18T23:17:55.715252', 'data_points': 10}
-2025-05-18 23:17:55,716 - 📤 Sent aggregated data to central server
-2025-05-18 23:17:56,044 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 936.47, 'pm25': 137.17, 'timestamp': '2025-05-18T23:17:56.044478'}
-2025-05-18 23:17:57,080 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 29.58, 'humidity': 42.61, 'timestamp': '2025-05-18T23:17:57.079963'}
-2025-05-18 23:17:57,867 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 23.59, 'wind_direction': 179.86, 'timestamp': '2025-05-18T23:17:57.866242'}
-2025-05-18 23:17:58,720 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 96.4, 'timestamp': '2025-05-18T23:17:58.719984'}
-2025-05-18 23:17:59,047 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 682.23, 'pm25': 94.73, 'timestamp': '2025-05-18T23:17:59.047077'}
-2025-05-18 23:17:59,086 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 50.54, 'humidity': 50.32, 'timestamp': '2025-05-18T23:17:59.086097'}
-2025-05-18 23:17:59,086 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 23.02, 'humidity': 56.0, 'timestamp': '2025-05-18T23:17:59.086596', 'data_points': 10}
-2025-05-18 23:17:59,087 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:00,872 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.38, 'wind_direction': 140.58, 'timestamp': '2025-05-18T23:18:00.872085'}
-2025-05-18 23:18:00,872 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 17.73, 'wind_direction': 171.15, 'timestamp': '2025-05-18T23:18:00.872665', 'data_points': 10}
-2025-05-18 23:18:00,873 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:01,089 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -5.06, 'humidity': 32.63, 'timestamp': '2025-05-18T23:18:01.088742'}
-2025-05-18 23:18:01,725 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 43.47, 'timestamp': '2025-05-18T23:18:01.725161'}
-2025-05-18 23:18:02,052 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 478.48, 'pm25': 65.5, 'timestamp': '2025-05-18T23:18:02.051610'}
-2025-05-18 23:18:03,094 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 22.84, 'humidity': 66.91, 'timestamp': '2025-05-18T23:18:03.093662'}
-2025-05-18 23:18:03,873 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 4.56, 'wind_direction': 193.25, 'timestamp': '2025-05-18T23:18:03.873396'}
-2025-05-18 23:18:04,730 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 94.21, 'timestamp': '2025-05-18T23:18:04.730279'}
-2025-05-18 23:18:05,052 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 329.13, 'pm25': 138.02, 'timestamp': '2025-05-18T23:18:05.052589'}
-2025-05-18 23:18:05,096 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -7.8, 'humidity': 67.94, 'timestamp': '2025-05-18T23:18:05.096044'}
-2025-05-18 23:18:06,876 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.2, 'wind_direction': 329.78, 'timestamp': '2025-05-18T23:18:06.875515'}
-2025-05-18 23:18:07,100 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 23.07, 'humidity': 80.08, 'timestamp': '2025-05-18T23:18:07.100187'}
-2025-05-18 23:18:07,733 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 58.83, 'timestamp': '2025-05-18T23:18:07.733429'}
-2025-05-18 23:18:08,056 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 885.67, 'pm25': 96.4, 'timestamp': '2025-05-18T23:18:08.055163'}
-2025-05-18 23:18:09,106 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 37.82, 'humidity': 59.35, 'timestamp': '2025-05-18T23:18:09.106108'}
-2025-05-18 23:18:09,882 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.94, 'wind_direction': 206.48, 'timestamp': '2025-05-18T23:18:09.882081'}
-2025-05-18 23:18:10,736 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.29, 'timestamp': '2025-05-18T23:18:10.735127'}
-2025-05-18 23:18:11,058 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 420.81, 'pm25': 101.08, 'timestamp': '2025-05-18T23:18:11.058461'}
-2025-05-18 23:18:11,108 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -16.43, 'humidity': 4.22, 'timestamp': '2025-05-18T23:18:11.108646'}
-2025-05-18 23:18:12,888 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 5.08, 'wind_direction': 131.05, 'timestamp': '2025-05-18T23:18:12.888042'}
-2025-05-18 23:18:13,110 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 46.44, 'humidity': 51.75, 'timestamp': '2025-05-18T23:18:13.110231'}
-2025-05-18 23:18:13,741 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 70.68, 'timestamp': '2025-05-18T23:18:13.741063'}
-2025-05-18 23:18:14,063 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 639.43, 'pm25': 1.46, 'timestamp': '2025-05-18T23:18:14.063646'}
-2025-05-18 23:18:15,110 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 40.59, 'humidity': 24.14, 'timestamp': '2025-05-18T23:18:15.110577'}
-2025-05-18 23:18:15,891 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.45, 'wind_direction': 11.5, 'timestamp': '2025-05-18T23:18:15.891081'}
-2025-05-18 23:18:16,741 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 34.69, 'timestamp': '2025-05-18T23:18:16.741809'}
-2025-05-18 23:18:17,065 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 811.16, 'pm25': 37.07, 'timestamp': '2025-05-18T23:18:17.065380'}
-2025-05-18 23:18:17,115 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 55.97, 'humidity': 59.05, 'timestamp': '2025-05-18T23:18:17.115165'}
-2025-05-18 23:18:18,894 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.94, 'wind_direction': 235.62, 'timestamp': '2025-05-18T23:18:18.893551'}
-2025-05-18 23:18:19,121 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -9.23, 'humidity': 19.79, 'timestamp': '2025-05-18T23:18:19.121168'}
-2025-05-18 23:18:19,122 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 18.82, 'humidity': 46.59, 'timestamp': '2025-05-18T23:18:19.122413', 'data_points': 10}
-2025-05-18 23:18:19,123 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:19,744 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 41.05, 'timestamp': '2025-05-18T23:18:19.743993'}
-2025-05-18 23:18:20,067 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 847.36, 'pm25': 116.92, 'timestamp': '2025-05-18T23:18:20.066836'}
-2025-05-18 23:18:21,127 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.17, 'humidity': 47.05, 'timestamp': '2025-05-18T23:18:21.127225'}
-2025-05-18 23:18:21,896 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.52, 'wind_direction': 108.29, 'timestamp': '2025-05-18T23:18:21.895954'}
-2025-05-18 23:18:22,750 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 31.48, 'timestamp': '2025-05-18T23:18:22.749973'}
-2025-05-18 23:18:23,071 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 328.44, 'pm25': 6.86, 'timestamp': '2025-05-18T23:18:23.070328'}
-2025-05-18 23:18:23,071 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 635.92, 'pm25': 79.52, 'timestamp': '2025-05-18T23:18:23.071318', 'data_points': 10}
-2025-05-18 23:18:23,072 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:23,131 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -5.86, 'humidity': 76.26, 'timestamp': '2025-05-18T23:18:23.131074'}
-2025-05-18 23:18:24,902 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 9.84, 'wind_direction': 14.22, 'timestamp': '2025-05-18T23:18:24.901244'}
-2025-05-18 23:18:25,132 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 24.76, 'humidity': 95.22, 'timestamp': '2025-05-18T23:18:25.132119'}
-2025-05-18 23:18:25,755 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 34.29, 'timestamp': '2025-05-18T23:18:25.755097'}
-2025-05-18 23:18:25,755 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 54.44, 'timestamp': '2025-05-18T23:18:25.755402', 'data_points': 10}
-2025-05-18 23:18:25,755 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:26,073 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 676.51, 'pm25': 110.04, 'timestamp': '2025-05-18T23:18:26.073059'}
-2025-05-18 23:18:27,137 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -17.22, 'humidity': 62.1, 'timestamp': '2025-05-18T23:18:27.137593'}
-2025-05-18 23:18:27,907 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.74, 'wind_direction': 54.26, 'timestamp': '2025-05-18T23:18:27.907107'}
-2025-05-18 23:18:28,757 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 62.47, 'timestamp': '2025-05-18T23:18:28.756741'}
-2025-05-18 23:18:29,074 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 844.22, 'pm25': 142.21, 'timestamp': '2025-05-18T23:18:29.073598'}
-2025-05-18 23:18:29,143 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -18.63, 'humidity': 20.57, 'timestamp': '2025-05-18T23:18:29.142777'}
-2025-05-18 23:18:30,907 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 22.36, 'wind_direction': 23.86, 'timestamp': '2025-05-18T23:18:30.907685'}
-2025-05-18 23:18:30,907 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 15.36, 'wind_direction': 130.83, 'timestamp': '2025-05-18T23:18:30.907969', 'data_points': 10}
-2025-05-18 23:18:30,908 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:31,148 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 47.55, 'humidity': 75.5, 'timestamp': '2025-05-18T23:18:31.148311'}
-2025-05-18 23:18:31,762 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 87.82, 'timestamp': '2025-05-18T23:18:31.762278'}
-2025-05-18 23:18:32,079 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 782.48, 'pm25': 89.31, 'timestamp': '2025-05-18T23:18:32.079369'}
-2025-05-18 23:18:33,152 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -1.24, 'humidity': 10.36, 'timestamp': '2025-05-18T23:18:33.151495'}
-2025-05-18 23:18:33,914 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.11, 'wind_direction': 9.81, 'timestamp': '2025-05-18T23:18:33.913456'}
-2025-05-18 23:18:34,766 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 74.73, 'timestamp': '2025-05-18T23:18:34.766631'}
-2025-05-18 23:18:35,084 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 968.87, 'pm25': 41.35, 'timestamp': '2025-05-18T23:18:35.083943'}
-2025-05-18 23:18:35,158 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 43.28, 'humidity': 13.08, 'timestamp': '2025-05-18T23:18:35.157636'}
-2025-05-18 23:18:36,921 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.94, 'wind_direction': 53.74, 'timestamp': '2025-05-18T23:18:36.920602'}
-2025-05-18 23:18:37,163 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.85, 'humidity': 17.78, 'timestamp': '2025-05-18T23:18:37.163124'}
-2025-05-18 23:18:37,771 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 42.57, 'timestamp': '2025-05-18T23:18:37.770826'}
-2025-05-18 23:18:38,085 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 303.89, 'pm25': 115.34, 'timestamp': '2025-05-18T23:18:38.085322'}
-2025-05-18 23:18:39,169 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 44.51, 'humidity': 56.09, 'timestamp': '2025-05-18T23:18:39.168809'}
-2025-05-18 23:18:39,169 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 13.62, 'humidity': 47.4, 'timestamp': '2025-05-18T23:18:39.169903', 'data_points': 10}
-2025-05-18 23:18:39,171 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:39,923 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.72, 'wind_direction': 140.02, 'timestamp': '2025-05-18T23:18:39.923313'}
-2025-05-18 23:18:40,775 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 43.04, 'timestamp': '2025-05-18T23:18:40.775417'}
-2025-05-18 23:18:41,091 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 810.98, 'pm25': 100.51, 'timestamp': '2025-05-18T23:18:41.091008'}
-2025-05-18 23:18:41,174 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 52.41, 'humidity': 33.02, 'timestamp': '2025-05-18T23:18:41.174607'}
-2025-05-18 23:18:42,926 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 22.79, 'wind_direction': 81.68, 'timestamp': '2025-05-18T23:18:42.926547'}
-2025-05-18 23:18:43,179 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -4.38, 'humidity': 56.35, 'timestamp': '2025-05-18T23:18:43.179247'}
-2025-05-18 23:18:43,779 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 40.85, 'timestamp': '2025-05-18T23:18:43.779681'}
-2025-05-18 23:18:44,096 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 540.35, 'pm25': 65.22, 'timestamp': '2025-05-18T23:18:44.095977'}
-2025-05-18 23:18:45,180 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -24.78, 'humidity': 47.48, 'timestamp': '2025-05-18T23:18:45.179994'}
-2025-05-18 23:18:45,930 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 24.36, 'wind_direction': 1.38, 'timestamp': '2025-05-18T23:18:45.930035'}
-2025-05-18 23:18:46,785 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 73.12, 'timestamp': '2025-05-18T23:18:46.784819'}
-2025-05-18 23:18:47,102 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 696.19, 'pm25': 48.12, 'timestamp': '2025-05-18T23:18:47.101843'}
-2025-05-18 23:18:47,185 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 31.42, 'humidity': 5.8, 'timestamp': '2025-05-18T23:18:47.185307'}
-2025-05-18 23:18:48,936 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 25.73, 'wind_direction': 294.51, 'timestamp': '2025-05-18T23:18:48.935802'}
-2025-05-18 23:18:49,188 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 4.73, 'humidity': 22.7, 'timestamp': '2025-05-18T23:18:49.187926'}
-2025-05-18 23:18:49,787 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 65.27, 'timestamp': '2025-05-18T23:18:49.786756'}
-2025-05-18 23:18:50,103 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 770.12, 'pm25': 45.24, 'timestamp': '2025-05-18T23:18:50.102891'}
-2025-05-18 23:18:51,194 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 29.75, 'humidity': 65.61, 'timestamp': '2025-05-18T23:18:51.193484'}
-2025-05-18 23:18:51,941 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 11.79, 'wind_direction': 236.44, 'timestamp': '2025-05-18T23:18:51.940978'}
-2025-05-18 23:18:52,788 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 57.82, 'timestamp': '2025-05-18T23:18:52.788514'}
-2025-05-18 23:18:53,301 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 918.27, 'pm25': 86.43, 'timestamp': '2025-05-18T23:18:53.106870'}
-2025-05-18 23:18:53,302 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 731.19, 'pm25': 84.38, 'timestamp': '2025-05-18T23:18:53.302891', 'data_points': 10}
-2025-05-18 23:18:53,303 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.52, 'humidity': 20.29, 'timestamp': '2025-05-18T23:18:53.196757'}
-2025-05-18 23:18:53,303 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:54,947 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.97, 'wind_direction': 282.98, 'timestamp': '2025-05-18T23:18:54.946834'}
-2025-05-18 23:18:55,202 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -7.77, 'humidity': 32.05, 'timestamp': '2025-05-18T23:18:55.202322'}
-2025-05-18 23:18:55,793 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 53.25, 'timestamp': '2025-05-18T23:18:55.792894'}
-2025-05-18 23:18:55,793 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 60.09, 'timestamp': '2025-05-18T23:18:55.793526', 'data_points': 10}
-2025-05-18 23:18:55,794 - 📤 Sent aggregated data to central server
-2025-05-18 23:18:56,110 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 398.04, 'pm25': 42.59, 'timestamp': '2025-05-18T23:18:56.109987'}
-2025-05-18 23:18:57,205 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -9.69, 'humidity': 32.05, 'timestamp': '2025-05-18T23:18:57.205002'}
-2025-05-18 23:18:57,953 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.95, 'wind_direction': 23.93, 'timestamp': '2025-05-18T23:18:57.952812'}
-2025-05-18 23:18:58,795 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 61.49, 'timestamp': '2025-05-18T23:18:58.794850'}
-2025-05-18 23:18:59,113 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 986.28, 'pm25': 105.94, 'timestamp': '2025-05-18T23:18:59.113128'}
-2025-05-18 23:18:59,209 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 41.91, 'humidity': 58.97, 'timestamp': '2025-05-18T23:18:59.209255'}
-2025-05-18 23:18:59,209 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 12.31, 'humidity': 37.43, 'timestamp': '2025-05-18T23:18:59.209547', 'data_points': 10}
-2025-05-18 23:18:59,209 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:00,954 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 5.53, 'wind_direction': 48.77, 'timestamp': '2025-05-18T23:19:00.954059'}
-2025-05-18 23:19:00,954 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 15.49, 'wind_direction': 117.33, 'timestamp': '2025-05-18T23:19:00.954750', 'data_points': 10}
-2025-05-18 23:19:00,956 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:01,213 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 15.31, 'humidity': 81.09, 'timestamp': '2025-05-18T23:19:01.213315'}
-2025-05-18 23:19:01,795 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 30.83, 'timestamp': '2025-05-18T23:19:01.795507'}
-2025-05-18 23:19:02,118 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 509.28, 'pm25': 145.63, 'timestamp': '2025-05-18T23:19:02.118402'}
-2025-05-18 23:19:03,215 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -11.65, 'humidity': 2.92, 'timestamp': '2025-05-18T23:19:03.214899'}
-2025-05-18 23:19:03,958 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 21.26, 'wind_direction': 180.62, 'timestamp': '2025-05-18T23:19:03.958208'}
-2025-05-18 23:19:04,796 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 97.6, 'timestamp': '2025-05-18T23:19:04.796059'}
-2025-05-18 23:19:05,119 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 726.33, 'pm25': 53.77, 'timestamp': '2025-05-18T23:19:05.119566'}
-2025-05-18 23:19:05,220 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 56.24, 'humidity': 29.59, 'timestamp': '2025-05-18T23:19:05.220162'}
-2025-05-18 23:19:06,960 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.69, 'wind_direction': 330.83, 'timestamp': '2025-05-18T23:19:06.960741'}
-2025-05-18 23:19:07,225 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 4.63, 'humidity': 26.66, 'timestamp': '2025-05-18T23:19:07.225363'}
-2025-05-18 23:19:07,801 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 65.67, 'timestamp': '2025-05-18T23:19:07.801541'}
-2025-05-18 23:19:08,121 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 980.72, 'pm25': 68.41, 'timestamp': '2025-05-18T23:19:08.121661'}
-2025-05-18 23:19:09,230 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 0.39, 'humidity': 84.74, 'timestamp': '2025-05-18T23:19:09.230598'}
-2025-05-18 23:19:09,966 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.58, 'wind_direction': 176.06, 'timestamp': '2025-05-18T23:19:09.966026'}
-2025-05-18 23:19:10,802 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.11, 'timestamp': '2025-05-18T23:19:10.802159'}
-2025-05-18 23:19:11,123 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 993.96, 'pm25': 86.88, 'timestamp': '2025-05-18T23:19:11.123554'}
-2025-05-18 23:19:11,235 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -11.69, 'humidity': 29.9, 'timestamp': '2025-05-18T23:19:11.235098'}
-2025-05-18 23:19:12,971 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 11.36, 'wind_direction': 233.32, 'timestamp': '2025-05-18T23:19:12.970732'}
-2025-05-18 23:19:13,240 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 19.48, 'humidity': 34.28, 'timestamp': '2025-05-18T23:19:13.239816'}
-2025-05-18 23:19:13,808 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 53.5, 'timestamp': '2025-05-18T23:19:13.807788'}
-2025-05-18 23:19:14,125 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 453.22, 'pm25': 7.17, 'timestamp': '2025-05-18T23:19:14.124825'}
-2025-05-18 23:19:15,246 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 12.47, 'humidity': 90.25, 'timestamp': '2025-05-18T23:19:15.246002'}
-2025-05-18 23:19:15,974 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.23, 'wind_direction': 305.69, 'timestamp': '2025-05-18T23:19:15.973321'}
-2025-05-18 23:19:16,812 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 38.72, 'timestamp': '2025-05-18T23:19:16.812632'}
-2025-05-18 23:19:17,131 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 541.91, 'pm25': 134.57, 'timestamp': '2025-05-18T23:19:17.130324'}
-2025-05-18 23:19:17,251 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 17.18, 'humidity': 87.03, 'timestamp': '2025-05-18T23:19:17.250523'}
-2025-05-18 23:19:18,981 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.76, 'wind_direction': 232.21, 'timestamp': '2025-05-18T23:19:18.979374'}
-2025-05-18 23:19:19,255 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 34.22, 'humidity': 11.28, 'timestamp': '2025-05-18T23:19:19.255453'}
-2025-05-18 23:19:19,255 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 13.66, 'humidity': 47.77, 'timestamp': '2025-05-18T23:19:19.255764', 'data_points': 10}
-2025-05-18 23:19:19,256 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:19,817 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 76.96, 'timestamp': '2025-05-18T23:19:19.817006'}
-2025-05-18 23:19:20,133 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 608.95, 'pm25': 1.65, 'timestamp': '2025-05-18T23:19:20.133672'}
-2025-05-18 23:19:21,259 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -24.27, 'humidity': 48.35, 'timestamp': '2025-05-18T23:19:21.259478'}
-2025-05-18 23:19:21,986 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.45, 'wind_direction': 106.63, 'timestamp': '2025-05-18T23:19:21.985952'}
-2025-05-18 23:19:22,817 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 83.69, 'timestamp': '2025-05-18T23:19:22.817585'}
-2025-05-18 23:19:23,139 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 667.88, 'pm25': 25.3, 'timestamp': '2025-05-18T23:19:23.138960'}
-2025-05-18 23:19:23,139 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 686.66, 'pm25': 67.19, 'timestamp': '2025-05-18T23:19:23.139205', 'data_points': 10}
-2025-05-18 23:19:23,139 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:23,265 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 7.9, 'humidity': 69.54, 'timestamp': '2025-05-18T23:19:23.264758'}
-2025-05-18 23:19:24,991 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 12.35, 'wind_direction': 97.74, 'timestamp': '2025-05-18T23:19:24.991243'}
-2025-05-18 23:19:25,270 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 2.11, 'humidity': 76.51, 'timestamp': '2025-05-18T23:19:25.270093'}
-2025-05-18 23:19:25,820 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 99.46, 'timestamp': '2025-05-18T23:19:25.819890'}
-2025-05-18 23:19:25,820 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 67.5, 'timestamp': '2025-05-18T23:19:25.820873', 'data_points': 10}
-2025-05-18 23:19:25,821 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:26,144 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 789.47, 'pm25': 95.49, 'timestamp': '2025-05-18T23:19:26.144197'}
-2025-05-18 23:19:27,275 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 1.77, 'humidity': 72.84, 'timestamp': '2025-05-18T23:19:27.275284'}
-2025-05-18 23:19:27,997 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.54, 'wind_direction': 303.67, 'timestamp': '2025-05-18T23:19:27.997092'}
-2025-05-18 23:19:28,821 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 76.89, 'timestamp': '2025-05-18T23:19:28.820739'}
-2025-05-18 23:19:29,148 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 773.02, 'pm25': 119.98, 'timestamp': '2025-05-18T23:19:29.148004'}
-2025-05-18 23:19:29,279 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 41.84, 'humidity': 20.37, 'timestamp': '2025-05-18T23:19:29.278968'}
-2025-05-18 23:19:31,002 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 14.08, 'wind_direction': 70.95, 'timestamp': '2025-05-18T23:19:31.001779'}
-2025-05-18 23:19:31,002 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 17.63, 'wind_direction': 203.77, 'timestamp': '2025-05-18T23:19:31.002807', 'data_points': 10}
-2025-05-18 23:19:31,003 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:31,284 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 43.03, 'humidity': 37.22, 'timestamp': '2025-05-18T23:19:31.284282'}
-2025-05-18 23:19:31,826 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 94.48, 'timestamp': '2025-05-18T23:19:31.826107'}
-2025-05-18 23:19:32,152 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 884.55, 'pm25': 47.7, 'timestamp': '2025-05-18T23:19:32.151432'}
-2025-05-18 23:19:33,288 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -16.54, 'humidity': 90.66, 'timestamp': '2025-05-18T23:19:33.287773'}
-2025-05-18 23:19:34,005 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 15.33, 'wind_direction': 181.38, 'timestamp': '2025-05-18T23:19:34.004803'}
-2025-05-18 23:19:34,831 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 70.54, 'timestamp': '2025-05-18T23:19:34.830777'}
-2025-05-18 23:19:35,156 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 753.72, 'pm25': 130.01, 'timestamp': '2025-05-18T23:19:35.155598'}
-2025-05-18 23:19:35,292 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -21.57, 'humidity': 17.76, 'timestamp': '2025-05-18T23:19:35.291818'}
-2025-05-18 23:19:37,008 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 4.02, 'wind_direction': 37.82, 'timestamp': '2025-05-18T23:19:37.008100'}
-2025-05-18 23:19:37,294 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 18.16, 'humidity': 36.6, 'timestamp': '2025-05-18T23:19:37.294290'}
-2025-05-18 23:19:37,834 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 52.93, 'timestamp': '2025-05-18T23:19:37.834520'}
-2025-05-18 23:19:38,161 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 813.06, 'pm25': 59.22, 'timestamp': '2025-05-18T23:19:38.161130'}
-2025-05-18 23:19:39,299 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 11.76, 'humidity': 17.06, 'timestamp': '2025-05-18T23:19:39.299673'}
-2025-05-18 23:19:39,299 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 6.42, 'humidity': 48.69, 'timestamp': '2025-05-18T23:19:39.299955', 'data_points': 10}
-2025-05-18 23:19:39,300 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:40,009 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.75, 'wind_direction': 114.53, 'timestamp': '2025-05-18T23:19:40.008776'}
-2025-05-18 23:19:40,837 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 53.23, 'timestamp': '2025-05-18T23:19:40.837169'}
-2025-05-18 23:19:41,166 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 850.04, 'pm25': 101.08, 'timestamp': '2025-05-18T23:19:41.166382'}
-2025-05-18 23:19:41,305 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 14.64, 'humidity': 15.02, 'timestamp': '2025-05-18T23:19:41.304853'}
-2025-05-18 23:19:43,014 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 17.82, 'wind_direction': 172.49, 'timestamp': '2025-05-18T23:19:43.014211'}
-2025-05-18 23:19:43,310 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 14.21, 'humidity': 21.0, 'timestamp': '2025-05-18T23:19:43.310339'}
-2025-05-18 23:19:43,842 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 51.67, 'timestamp': '2025-05-18T23:19:43.841930'}
-2025-05-18 23:19:44,172 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 927.61, 'pm25': 145.63, 'timestamp': '2025-05-18T23:19:44.171471'}
-2025-05-18 23:19:45,314 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 58.85, 'humidity': 97.58, 'timestamp': '2025-05-18T23:19:45.312521'}
-2025-05-18 23:19:46,020 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.03, 'wind_direction': 156.83, 'timestamp': '2025-05-18T23:19:46.020007'}
-2025-05-18 23:19:46,847 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 30.82, 'timestamp': '2025-05-18T23:19:46.847490'}
-2025-05-18 23:19:47,173 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 556.49, 'pm25': 77.22, 'timestamp': '2025-05-18T23:19:47.173487'}
-2025-05-18 23:19:47,319 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 1.71, 'humidity': 69.01, 'timestamp': '2025-05-18T23:19:47.318963'}
-2025-05-18 23:19:49,023 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 6.98, 'wind_direction': 312.14, 'timestamp': '2025-05-18T23:19:49.022978'}
-2025-05-18 23:19:49,324 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 37.15, 'humidity': 47.72, 'timestamp': '2025-05-18T23:19:49.324195'}
-2025-05-18 23:19:49,850 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 41.57, 'timestamp': '2025-05-18T23:19:49.850287'}
-2025-05-18 23:19:50,174 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 646.61, 'pm25': 87.03, 'timestamp': '2025-05-18T23:19:50.174365'}
-2025-05-18 23:19:51,325 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -11.9, 'humidity': 71.95, 'timestamp': '2025-05-18T23:19:51.325305'}
-2025-05-18 23:19:52,024 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 28.43, 'wind_direction': 50.73, 'timestamp': '2025-05-18T23:19:52.024215'}
-2025-05-18 23:19:52,854 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 83.33, 'timestamp': '2025-05-18T23:19:52.854137'}
-2025-05-18 23:19:53,178 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 327.19, 'pm25': 71.73, 'timestamp': '2025-05-18T23:19:53.177476'}
-2025-05-18 23:19:53,178 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 732.18, 'pm25': 93.51, 'timestamp': '2025-05-18T23:19:53.178605', 'data_points': 10}
-2025-05-18 23:19:53,179 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:53,331 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 31.13, 'humidity': 11.11, 'timestamp': '2025-05-18T23:19:53.330861'}
-2025-05-18 23:19:55,025 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.97, 'wind_direction': 302.7, 'timestamp': '2025-05-18T23:19:55.025571'}
-2025-05-18 23:19:55,332 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 8.38, 'humidity': 50.47, 'timestamp': '2025-05-18T23:19:55.331723'}
-2025-05-18 23:19:55,860 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 71.25, 'timestamp': '2025-05-18T23:19:55.860003'}
-2025-05-18 23:19:55,861 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 62.67, 'timestamp': '2025-05-18T23:19:55.861128', 'data_points': 10}
-2025-05-18 23:19:55,862 - 📤 Sent aggregated data to central server
-2025-05-18 23:19:56,180 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 686.34, 'pm25': 22.36, 'timestamp': '2025-05-18T23:19:56.179810'}
-2025-05-18 23:19:57,334 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -5.09, 'humidity': 84.76, 'timestamp': '2025-05-18T23:19:57.334027'}
-2025-05-18 23:19:58,030 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.28, 'wind_direction': 148.64, 'timestamp': '2025-05-18T23:19:58.029382'}
-2025-05-18 23:19:58,861 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.55, 'timestamp': '2025-05-18T23:19:58.861098'}
-2025-05-18 23:19:59,183 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 700.47, 'pm25': 0.16, 'timestamp': '2025-05-18T23:19:59.182948'}
-2025-05-18 23:19:59,335 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 12.89, 'humidity': 14.45, 'timestamp': '2025-05-18T23:19:59.334892'}
-2025-05-18 23:19:59,335 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 16.2, 'humidity': 48.31, 'timestamp': '2025-05-18T23:19:59.335228', 'data_points': 10}
-2025-05-18 23:19:59,335 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:01,035 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.74, 'wind_direction': 347.44, 'timestamp': '2025-05-18T23:20:01.035241'}
-2025-05-18 23:20:01,035 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 16.54, 'wind_direction': 182.47, 'timestamp': '2025-05-18T23:20:01.035725', 'data_points': 10}
-2025-05-18 23:20:01,036 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:01,340 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 16.84, 'humidity': 0.98, 'timestamp': '2025-05-18T23:20:01.340175'}
-2025-05-18 23:20:01,866 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 36.28, 'timestamp': '2025-05-18T23:20:01.866305'}
-2025-05-18 23:20:02,189 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 558.12, 'pm25': 73.95, 'timestamp': '2025-05-18T23:20:02.188401'}
-2025-05-18 23:20:03,343 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 50.35, 'humidity': 17.81, 'timestamp': '2025-05-18T23:20:03.342379'}
-2025-05-18 23:20:04,041 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.34, 'wind_direction': 269.68, 'timestamp': '2025-05-18T23:20:04.040631'}
-2025-05-18 23:20:04,871 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 65.72, 'timestamp': '2025-05-18T23:20:04.871640'}
-2025-05-18 23:20:05,191 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 834.78, 'pm25': 62.52, 'timestamp': '2025-05-18T23:20:05.191273'}
-2025-05-18 23:20:05,344 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -5.19, 'humidity': 39.6, 'timestamp': '2025-05-18T23:20:05.344515'}
-2025-05-18 23:20:07,046 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.86, 'wind_direction': 307.39, 'timestamp': '2025-05-18T23:20:07.046096'}
-2025-05-18 23:20:07,350 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 18.99, 'humidity': 7.54, 'timestamp': '2025-05-18T23:20:07.349914'}
-2025-05-18 23:20:07,875 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 95.18, 'timestamp': '2025-05-18T23:20:07.874617'}
-2025-05-18 23:20:08,193 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 454.82, 'pm25': 1.06, 'timestamp': '2025-05-18T23:20:08.193559'}
-2025-05-18 23:20:09,354 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 16.86, 'humidity': 75.56, 'timestamp': '2025-05-18T23:20:09.354640'}
-2025-05-18 23:20:10,050 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.3, 'wind_direction': 152.79, 'timestamp': '2025-05-18T23:20:10.050465'}
-2025-05-18 23:20:10,878 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.77, 'timestamp': '2025-05-18T23:20:10.877241'}
-2025-05-18 23:20:11,196 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 726.48, 'pm25': 50.69, 'timestamp': '2025-05-18T23:20:11.195947'}
-2025-05-18 23:20:11,356 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 59.53, 'humidity': 7.43, 'timestamp': '2025-05-18T23:20:11.355982'}
-2025-05-18 23:20:13,051 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 23.72, 'wind_direction': 175.94, 'timestamp': '2025-05-18T23:20:13.051209'}
-2025-05-18 23:20:13,356 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -20.76, 'humidity': 33.15, 'timestamp': '2025-05-18T23:20:13.356218'}
-2025-05-18 23:20:13,882 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 87.18, 'timestamp': '2025-05-18T23:20:13.882642'}
-2025-05-18 23:20:14,198 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 793.46, 'pm25': 66.97, 'timestamp': '2025-05-18T23:20:14.198013'}
-2025-05-18 23:20:15,359 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 51.9, 'humidity': 13.7, 'timestamp': '2025-05-18T23:20:15.359395'}
-2025-05-18 23:20:16,055 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.17, 'wind_direction': 97.95, 'timestamp': '2025-05-18T23:20:16.054676'}
-2025-05-18 23:20:16,886 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 45.29, 'timestamp': '2025-05-18T23:20:16.886563'}
-2025-05-18 23:20:17,202 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 363.51, 'pm25': 13.68, 'timestamp': '2025-05-18T23:20:17.202152'}
-2025-05-18 23:20:17,362 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 34.73, 'humidity': 10.24, 'timestamp': '2025-05-18T23:20:17.361968'}
-2025-05-18 23:20:19,060 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 8.82, 'wind_direction': 113.91, 'timestamp': '2025-05-18T23:20:19.060377'}
-2025-05-18 23:20:19,365 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 42.86, 'humidity': 73.21, 'timestamp': '2025-05-18T23:20:19.365009'}
-2025-05-18 23:20:19,365 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 26.61, 'humidity': 27.92, 'timestamp': '2025-05-18T23:20:19.365287', 'data_points': 10}
-2025-05-18 23:20:19,365 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:19,888 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 76.28, 'timestamp': '2025-05-18T23:20:19.887943'}
-2025-05-18 23:20:20,207 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 354.78, 'pm25': 101.99, 'timestamp': '2025-05-18T23:20:20.207389'}
-2025-05-18 23:20:21,370 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 1.71, 'humidity': 82.89, 'timestamp': '2025-05-18T23:20:21.370223'}
-2025-05-18 23:20:22,065 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.32, 'wind_direction': 165.2, 'timestamp': '2025-05-18T23:20:22.064959'}
-2025-05-18 23:20:22,893 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 85.36, 'timestamp': '2025-05-18T23:20:22.893422'}
-2025-05-18 23:20:23,210 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 552.41, 'pm25': 51.9, 'timestamp': '2025-05-18T23:20:23.210719'}
-2025-05-18 23:20:23,211 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 602.52, 'pm25': 44.53, 'timestamp': '2025-05-18T23:20:23.211116', 'data_points': 10}
-2025-05-18 23:20:23,211 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:23,372 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 17.62, 'humidity': 32.59, 'timestamp': '2025-05-18T23:20:23.371482'}
-2025-05-18 23:20:25,070 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 6.19, 'wind_direction': 175.13, 'timestamp': '2025-05-18T23:20:25.069835'}
-2025-05-18 23:20:25,373 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 43.35, 'humidity': 92.45, 'timestamp': '2025-05-18T23:20:25.372762'}
-2025-05-18 23:20:25,899 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 77.69, 'timestamp': '2025-05-18T23:20:25.898966'}
-2025-05-18 23:20:25,900 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 71.63, 'timestamp': '2025-05-18T23:20:25.900126', 'data_points': 10}
-2025-05-18 23:20:25,901 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:26,216 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 659.23, 'pm25': 117.53, 'timestamp': '2025-05-18T23:20:26.216114'}
-2025-05-18 23:20:27,378 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 4.15, 'humidity': 42.31, 'timestamp': '2025-05-18T23:20:27.378279'}
-2025-05-18 23:20:28,075 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.23, 'wind_direction': 256.03, 'timestamp': '2025-05-18T23:20:28.075225'}
-2025-05-18 23:20:28,904 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 77.96, 'timestamp': '2025-05-18T23:20:28.903684'}
-2025-05-18 23:20:29,218 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 745.46, 'pm25': 8.36, 'timestamp': '2025-05-18T23:20:29.218120'}
-2025-05-18 23:20:29,382 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 2.54, 'humidity': 12.08, 'timestamp': '2025-05-18T23:20:29.382000'}
-2025-05-18 23:20:31,078 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 7.97, 'wind_direction': 80.5, 'timestamp': '2025-05-18T23:20:31.078607'}
-2025-05-18 23:20:31,078 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 9.79, 'wind_direction': 179.45, 'timestamp': '2025-05-18T23:20:31.078928', 'data_points': 10}
-2025-05-18 23:20:31,079 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:31,387 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -28.92, 'humidity': 9.12, 'timestamp': '2025-05-18T23:20:31.386987'}
-2025-05-18 23:20:31,910 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 69.62, 'timestamp': '2025-05-18T23:20:31.909642'}
-2025-05-18 23:20:32,220 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 321.48, 'pm25': 122.7, 'timestamp': '2025-05-18T23:20:32.219637'}
-2025-05-18 23:20:33,392 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -8.48, 'humidity': 36.01, 'timestamp': '2025-05-18T23:20:33.391432'}
-2025-05-18 23:20:34,083 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 17.88, 'wind_direction': 90.72, 'timestamp': '2025-05-18T23:20:34.082849'}
-2025-05-18 23:20:34,912 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.05, 'timestamp': '2025-05-18T23:20:34.911641'}
-2025-05-18 23:20:35,225 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 396.8, 'pm25': 128.49, 'timestamp': '2025-05-18T23:20:35.224528'}
-2025-05-18 23:20:35,392 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 45.96, 'humidity': 5.38, 'timestamp': '2025-05-18T23:20:35.392060'}
-2025-05-18 23:20:37,089 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 13.02, 'wind_direction': 328.18, 'timestamp': '2025-05-18T23:20:37.088647'}
-2025-05-18 23:20:37,396 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 3.9, 'humidity': 48.08, 'timestamp': '2025-05-18T23:20:37.396389'}
-2025-05-18 23:20:37,917 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 48.42, 'timestamp': '2025-05-18T23:20:37.917196'}
-2025-05-18 23:20:38,230 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 926.9, 'pm25': 79.8, 'timestamp': '2025-05-18T23:20:38.229807'}
-2025-05-18 23:20:39,399 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -24.07, 'humidity': 33.28, 'timestamp': '2025-05-18T23:20:39.399798'}
-2025-05-18 23:20:39,400 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 5.78, 'humidity': 39.42, 'timestamp': '2025-05-18T23:20:39.400066', 'data_points': 10}
-2025-05-18 23:20:39,400 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:40,095 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 4.38, 'wind_direction': 82.55, 'timestamp': '2025-05-18T23:20:40.094536'}
-2025-05-18 23:20:40,922 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 34.96, 'timestamp': '2025-05-18T23:20:40.922478'}
-2025-05-18 23:20:41,235 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 386.77, 'pm25': 62.07, 'timestamp': '2025-05-18T23:20:41.235495'}
-2025-05-18 23:20:41,403 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -2.87, 'humidity': 3.05, 'timestamp': '2025-05-18T23:20:41.403617'}
-2025-05-18 23:20:43,096 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.93, 'wind_direction': 96.84, 'timestamp': '2025-05-18T23:20:43.095776'}
-2025-05-18 23:20:43,409 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -7.46, 'humidity': 38.39, 'timestamp': '2025-05-18T23:20:43.408902'}
-2025-05-18 23:20:43,929 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.22, 'timestamp': '2025-05-18T23:20:43.927872'}
-2025-05-18 23:20:44,239 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 817.9, 'pm25': 45.48, 'timestamp': '2025-05-18T23:20:44.238937'}
-2025-05-18 23:20:45,415 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 46.03, 'humidity': 1.51, 'timestamp': '2025-05-18T23:20:45.414279'}
-2025-05-18 23:20:46,099 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.14, 'wind_direction': 119.41, 'timestamp': '2025-05-18T23:20:46.098949'}
-2025-05-18 23:20:46,933 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 58.18, 'timestamp': '2025-05-18T23:20:46.932768'}
-2025-05-18 23:20:47,243 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 662.31, 'pm25': 60.74, 'timestamp': '2025-05-18T23:20:47.242363'}
-2025-05-18 23:20:47,420 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 55.86, 'humidity': 10.33, 'timestamp': '2025-05-18T23:20:47.420121'}
-2025-05-18 23:20:49,104 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.94, 'wind_direction': 125.35, 'timestamp': '2025-05-18T23:20:49.104547'}
-2025-05-18 23:20:49,423 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 38.04, 'humidity': 8.45, 'timestamp': '2025-05-18T23:20:49.423072'}
-2025-05-18 23:20:49,936 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 63.39, 'timestamp': '2025-05-18T23:20:49.935760'}
-2025-05-18 23:20:50,248 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 448.85, 'pm25': 97.43, 'timestamp': '2025-05-18T23:20:50.248464'}
-2025-05-18 23:20:51,424 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -29.83, 'humidity': 20.69, 'timestamp': '2025-05-18T23:20:51.424611'}
-2025-05-18 23:20:52,106 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 7.8, 'wind_direction': 150.45, 'timestamp': '2025-05-18T23:20:52.105783'}
-2025-05-18 23:20:53,346 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 44.78, 'timestamp': '2025-05-18T23:20:52.941028'}
-2025-05-18 23:20:53,347 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 971.84, 'pm25': 5.09, 'timestamp': '2025-05-18T23:20:53.253880'}
-2025-05-18 23:20:53,347 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 633.75, 'pm25': 72.77, 'timestamp': '2025-05-18T23:20:53.347232', 'data_points': 10}
-2025-05-18 23:20:53,348 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:53,428 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 55.48, 'humidity': 2.19, 'timestamp': '2025-05-18T23:20:53.428318'}
-2025-05-18 23:20:55,112 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 9.63, 'wind_direction': 126.3, 'timestamp': '2025-05-18T23:20:55.111431'}
-2025-05-18 23:20:55,431 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 20.05, 'humidity': 1.69, 'timestamp': '2025-05-18T23:20:55.431441'}
-2025-05-18 23:20:55,946 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 49.1, 'timestamp': '2025-05-18T23:20:55.946175'}
-2025-05-18 23:20:55,947 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 56.07, 'timestamp': '2025-05-18T23:20:55.947196', 'data_points': 10}
-2025-05-18 23:20:55,948 - 📤 Sent aggregated data to central server
-2025-05-18 23:20:56,256 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 397.63, 'pm25': 27.66, 'timestamp': '2025-05-18T23:20:56.256440'}
-2025-05-18 23:20:57,433 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 46.79, 'humidity': 44.66, 'timestamp': '2025-05-18T23:20:57.432736'}
-2025-05-18 23:20:58,114 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.91, 'wind_direction': 184.6, 'timestamp': '2025-05-18T23:20:58.113928'}
-2025-05-18 23:20:58,952 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 95.23, 'timestamp': '2025-05-18T23:20:58.951574'}
-2025-05-18 23:20:59,256 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 556.43, 'pm25': 96.2, 'timestamp': '2025-05-18T23:20:59.256732'}
-2025-05-18 23:20:59,438 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 41.15, 'humidity': 85.41, 'timestamp': '2025-05-18T23:20:59.438059'}
-2025-05-18 23:20:59,438 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 26.32, 'humidity': 21.64, 'timestamp': '2025-05-18T23:20:59.438369', 'data_points': 10}
-2025-05-18 23:20:59,438 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:01,116 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 28.06, 'wind_direction': 210.3, 'timestamp': '2025-05-18T23:21:01.116307'}
-2025-05-18 23:21:01,116 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 15.57, 'wind_direction': 151.47, 'timestamp': '2025-05-18T23:21:01.116634', 'data_points': 10}
-2025-05-18 23:21:01,117 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:01,441 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -16.03, 'humidity': 12.53, 'timestamp': '2025-05-18T23:21:01.440940'}
-2025-05-18 23:21:01,956 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 79.79, 'timestamp': '2025-05-18T23:21:01.956387'}
-2025-05-18 23:21:02,263 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 344.22, 'pm25': 110.05, 'timestamp': '2025-05-18T23:21:02.261953'}
-2025-05-18 23:21:03,441 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 56.38, 'humidity': 34.9, 'timestamp': '2025-05-18T23:21:03.441635'}
-2025-05-18 23:21:04,121 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 10.08, 'wind_direction': 60.16, 'timestamp': '2025-05-18T23:21:04.121269'}
-2025-05-18 23:21:04,961 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 76.11, 'timestamp': '2025-05-18T23:21:04.960926'}
-2025-05-18 23:21:05,268 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 647.57, 'pm25': 8.22, 'timestamp': '2025-05-18T23:21:05.268017'}
-2025-05-18 23:21:05,446 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 38.73, 'humidity': 34.31, 'timestamp': '2025-05-18T23:21:05.446086'}
-2025-05-18 23:21:07,122 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 13.95, 'wind_direction': 217.33, 'timestamp': '2025-05-18T23:21:07.122765'}
-2025-05-18 23:21:07,447 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 31.53, 'humidity': 86.25, 'timestamp': '2025-05-18T23:21:07.446796'}
-2025-05-18 23:21:07,967 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 35.76, 'timestamp': '2025-05-18T23:21:07.966358'}
-2025-05-18 23:21:08,271 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 612.12, 'pm25': 38.03, 'timestamp': '2025-05-18T23:21:08.271037'}
-2025-05-18 23:21:09,449 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -25.3, 'humidity': 16.63, 'timestamp': '2025-05-18T23:21:09.449777'}
-2025-05-18 23:21:10,127 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 22.19, 'wind_direction': 226.27, 'timestamp': '2025-05-18T23:21:10.126355'}
-2025-05-18 23:21:10,971 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 62.18, 'timestamp': '2025-05-18T23:21:10.971119'}
-2025-05-18 23:21:11,273 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 928.93, 'pm25': 41.12, 'timestamp': '2025-05-18T23:21:11.273101'}
-2025-05-18 23:21:11,452 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 46.91, 'humidity': 84.92, 'timestamp': '2025-05-18T23:21:11.451936'}
-2025-05-18 23:21:13,130 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 4.13, 'wind_direction': 308.11, 'timestamp': '2025-05-18T23:21:13.129422'}
-2025-05-18 23:21:13,456 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 59.14, 'humidity': 36.57, 'timestamp': '2025-05-18T23:21:13.455791'}
-2025-05-18 23:21:13,975 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 57.38, 'timestamp': '2025-05-18T23:21:13.974778'}
-2025-05-18 23:21:14,279 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 383.84, 'pm25': 79.49, 'timestamp': '2025-05-18T23:21:14.278574'}
-2025-05-18 23:21:15,458 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 14.69, 'humidity': 30.07, 'timestamp': '2025-05-18T23:21:15.458143'}
-2025-05-18 23:21:16,135 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 19.59, 'wind_direction': 287.01, 'timestamp': '2025-05-18T23:21:16.135311'}
-2025-05-18 23:21:16,981 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 73.76, 'timestamp': '2025-05-18T23:21:16.980267'}
-2025-05-18 23:21:17,283 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 847.33, 'pm25': 56.88, 'timestamp': '2025-05-18T23:21:17.283307'}
-2025-05-18 23:21:17,461 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 23.69, 'humidity': 57.06, 'timestamp': '2025-05-18T23:21:17.461522'}
-2025-05-18 23:21:19,139 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 13.89, 'wind_direction': 341.47, 'timestamp': '2025-05-18T23:21:19.139156'}
-2025-05-18 23:21:19,466 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 53.4, 'humidity': 49.24, 'timestamp': '2025-05-18T23:21:19.465943'}
-2025-05-18 23:21:19,466 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 28.31, 'humidity': 44.25, 'timestamp': '2025-05-18T23:21:19.466443', 'data_points': 10}
-2025-05-18 23:21:19,467 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:19,986 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 42.3, 'timestamp': '2025-05-18T23:21:19.986206'}
-2025-05-18 23:21:20,289 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 841.98, 'pm25': 72.28, 'timestamp': '2025-05-18T23:21:20.288594'}
-2025-05-18 23:21:21,472 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 53.71, 'humidity': 54.36, 'timestamp': '2025-05-18T23:21:21.471556'}
-2025-05-18 23:21:22,145 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 18.52, 'wind_direction': 339.28, 'timestamp': '2025-05-18T23:21:22.145031'}
-2025-05-18 23:21:22,991 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 85.52, 'timestamp': '2025-05-18T23:21:22.991069'}
-2025-05-18 23:21:23,292 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 845.93, 'pm25': 105.74, 'timestamp': '2025-05-18T23:21:23.290975'}
-2025-05-18 23:21:23,292 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 640.6, 'pm25': 63.57, 'timestamp': '2025-05-18T23:21:23.292494', 'data_points': 10}
-2025-05-18 23:21:23,293 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:23,477 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -16.93, 'humidity': 8.8, 'timestamp': '2025-05-18T23:21:23.477253'}
-2025-05-18 23:21:25,145 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 29.65, 'wind_direction': 58.47, 'timestamp': '2025-05-18T23:21:25.145573'}
-2025-05-18 23:21:25,483 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.31, 'humidity': 16.82, 'timestamp': '2025-05-18T23:21:25.482521'}
-2025-05-18 23:21:25,997 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 75.83, 'timestamp': '2025-05-18T23:21:25.997099'}
-2025-05-18 23:21:25,997 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 68.39, 'timestamp': '2025-05-18T23:21:25.997365', 'data_points': 10}
-2025-05-18 23:21:25,997 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:26,297 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 716.19, 'pm25': 78.39, 'timestamp': '2025-05-18T23:21:26.297251'}
-2025-05-18 23:21:27,488 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 16.6, 'humidity': 90.57, 'timestamp': '2025-05-18T23:21:27.488576'}
-2025-05-18 23:21:28,151 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.4, 'wind_direction': 232.98, 'timestamp': '2025-05-18T23:21:28.150090'}
-2025-05-18 23:21:29,000 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 81.76, 'timestamp': '2025-05-18T23:21:29.000150'}
-2025-05-18 23:21:29,302 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 920.24, 'pm25': 32.55, 'timestamp': '2025-05-18T23:21:29.302525'}
-2025-05-18 23:21:29,493 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -3.6, 'humidity': 93.77, 'timestamp': '2025-05-18T23:21:29.492492'}
-2025-05-18 23:21:31,154 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 14.0, 'wind_direction': 93.95, 'timestamp': '2025-05-18T23:21:31.154259'}
-2025-05-18 23:21:31,154 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 17.34, 'wind_direction': 216.5, 'timestamp': '2025-05-18T23:21:31.154521', 'data_points': 10}
-2025-05-18 23:21:31,154 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:31,494 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -4.1, 'humidity': 41.42, 'timestamp': '2025-05-18T23:21:31.494229'}
-2025-05-18 23:21:32,003 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 66.97, 'timestamp': '2025-05-18T23:21:32.002183'}
-2025-05-18 23:21:32,308 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 822.81, 'pm25': 72.8, 'timestamp': '2025-05-18T23:21:32.307849'}
-2025-05-18 23:21:33,499 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 14.37, 'humidity': 50.84, 'timestamp': '2025-05-18T23:21:33.499259'}
-2025-05-18 23:21:34,158 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 6.99, 'wind_direction': 43.97, 'timestamp': '2025-05-18T23:21:34.158064'}
-2025-05-18 23:21:35,004 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.69, 'timestamp': '2025-05-18T23:21:35.004272'}
-2025-05-18 23:21:35,313 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 382.03, 'pm25': 113.98, 'timestamp': '2025-05-18T23:21:35.312658'}
-2025-05-18 23:21:35,505 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 8.79, 'humidity': 78.88, 'timestamp': '2025-05-18T23:21:35.504976'}
-2025-05-18 23:21:37,164 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 1.17, 'wind_direction': 138.47, 'timestamp': '2025-05-18T23:21:37.162424'}
-2025-05-18 23:21:37,510 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -3.38, 'humidity': 19.84, 'timestamp': '2025-05-18T23:21:37.510186'}
-2025-05-18 23:21:38,009 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 33.53, 'timestamp': '2025-05-18T23:21:38.009495'}
-2025-05-18 23:21:38,318 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 952.75, 'pm25': 121.06, 'timestamp': '2025-05-18T23:21:38.318035'}
-2025-05-18 23:21:39,512 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 12.56, 'humidity': 49.5, 'timestamp': '2025-05-18T23:21:39.512328'}
-2025-05-18 23:21:39,512 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 8.73, 'humidity': 50.48, 'timestamp': '2025-05-18T23:21:39.512879', 'data_points': 10}
-2025-05-18 23:21:39,513 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:40,167 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.22, 'wind_direction': 281.67, 'timestamp': '2025-05-18T23:21:40.167716'}
-2025-05-18 23:21:41,014 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 69.91, 'timestamp': '2025-05-18T23:21:41.013818'}
-2025-05-18 23:21:41,319 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 977.59, 'pm25': 71.4, 'timestamp': '2025-05-18T23:21:41.319158'}
-2025-05-18 23:21:41,517 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.08, 'humidity': 31.72, 'timestamp': '2025-05-18T23:21:41.517640'}
-2025-05-18 23:21:43,173 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 18.23, 'wind_direction': 4.15, 'timestamp': '2025-05-18T23:21:43.173015'}
-2025-05-18 23:21:43,523 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 55.77, 'humidity': 85.4, 'timestamp': '2025-05-18T23:21:43.522893'}
-2025-05-18 23:21:44,016 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 35.96, 'timestamp': '2025-05-18T23:21:44.015795'}
-2025-05-18 23:21:44,323 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 584.56, 'pm25': 100.06, 'timestamp': '2025-05-18T23:21:44.322982'}
-2025-05-18 23:21:45,528 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -13.35, 'humidity': 86.7, 'timestamp': '2025-05-18T23:21:45.528310'}
-2025-05-18 23:21:46,174 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 25.61, 'wind_direction': 99.67, 'timestamp': '2025-05-18T23:21:46.174223'}
-2025-05-18 23:21:47,021 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 38.96, 'timestamp': '2025-05-18T23:21:47.021007'}
-2025-05-18 23:21:47,324 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 760.58, 'pm25': 126.12, 'timestamp': '2025-05-18T23:21:47.324197'}
-2025-05-18 23:21:47,532 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 52.15, 'humidity': 42.92, 'timestamp': '2025-05-18T23:21:47.532470'}
-2025-05-18 23:21:49,179 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 0.46, 'wind_direction': 170.48, 'timestamp': '2025-05-18T23:21:49.179602'}
-2025-05-18 23:21:49,538 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -12.98, 'humidity': 2.3, 'timestamp': '2025-05-18T23:21:49.538034'}
-2025-05-18 23:21:50,026 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 37.07, 'timestamp': '2025-05-18T23:21:50.026508'}
-2025-05-18 23:21:50,329 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 676.64, 'pm25': 122.7, 'timestamp': '2025-05-18T23:21:50.328834'}
-2025-05-18 23:21:51,538 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 49.43, 'humidity': 75.62, 'timestamp': '2025-05-18T23:21:51.538498'}
-2025-05-18 23:21:52,185 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 28.64, 'wind_direction': 21.47, 'timestamp': '2025-05-18T23:21:52.184833'}
-2025-05-18 23:21:53,028 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 93.47, 'timestamp': '2025-05-18T23:21:53.028709'}
-2025-05-18 23:21:53,332 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 491.2, 'pm25': 124.18, 'timestamp': '2025-05-18T23:21:53.332451'}
-2025-05-18 23:21:53,332 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 728.46, 'pm25': 96.32, 'timestamp': '2025-05-18T23:21:53.332911', 'data_points': 10}
-2025-05-18 23:21:53,333 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:53,539 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -27.86, 'humidity': 23.04, 'timestamp': '2025-05-18T23:21:53.539546'}
-2025-05-18 23:21:55,186 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 29.74, 'wind_direction': 9.49, 'timestamp': '2025-05-18T23:21:55.186211'}
-2025-05-18 23:21:55,541 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 17.32, 'humidity': 94.99, 'timestamp': '2025-05-18T23:21:55.541171'}
-2025-05-18 23:21:56,034 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 91.41, 'timestamp': '2025-05-18T23:21:56.033928'}
-2025-05-18 23:21:56,034 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 58.87, 'timestamp': '2025-05-18T23:21:56.034635', 'data_points': 10}
-2025-05-18 23:21:56,035 - 📤 Sent aggregated data to central server
-2025-05-18 23:21:56,337 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 974.75, 'pm25': 117.01, 'timestamp': '2025-05-18T23:21:56.336883'}
-2025-05-18 23:21:57,543 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 6.67, 'humidity': 69.71, 'timestamp': '2025-05-18T23:21:57.542756'}
-2025-05-18 23:21:58,191 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 13.51, 'wind_direction': 257.23, 'timestamp': '2025-05-18T23:21:58.191778'}
-2025-05-18 23:21:59,039 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.1, 'timestamp': '2025-05-18T23:21:59.039395'}
-2025-05-18 23:21:59,342 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 417.29, 'pm25': 52.84, 'timestamp': '2025-05-18T23:21:59.342360'}
-2025-05-18 23:21:59,544 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -22.98, 'humidity': 17.37, 'timestamp': '2025-05-18T23:21:59.544470'}
-2025-05-18 23:21:59,544 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 11.32, 'humidity': 52.98, 'timestamp': '2025-05-18T23:21:59.544729', 'data_points': 10}
-2025-05-18 23:21:59,544 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:01,193 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 7.33, 'wind_direction': 204.12, 'timestamp': '2025-05-18T23:22:01.193380'}
-2025-05-18 23:22:01,193 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 14.79, 'wind_direction': 123.07, 'timestamp': '2025-05-18T23:22:01.193707', 'data_points': 10}
-2025-05-18 23:22:01,194 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:01,547 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 9.57, 'humidity': 47.98, 'timestamp': '2025-05-18T23:22:01.547207'}
-2025-05-18 23:22:02,045 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 46.2, 'timestamp': '2025-05-18T23:22:02.045374'}
-2025-05-18 23:22:02,347 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 582.71, 'pm25': 131.32, 'timestamp': '2025-05-18T23:22:02.345987'}
-2025-05-18 23:22:03,550 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -26.91, 'humidity': 13.41, 'timestamp': '2025-05-18T23:22:03.550538'}
-2025-05-18 23:22:04,199 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 18.06, 'wind_direction': 12.25, 'timestamp': '2025-05-18T23:22:04.198648'}
-2025-05-18 23:22:05,051 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.86, 'timestamp': '2025-05-18T23:22:05.050627'}
-2025-05-18 23:22:05,348 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 416.11, 'pm25': 59.3, 'timestamp': '2025-05-18T23:22:05.348549'}
-2025-05-18 23:22:05,556 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 53.34, 'humidity': 76.92, 'timestamp': '2025-05-18T23:22:05.555847'}
-2025-05-18 23:22:07,200 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 2.96, 'wind_direction': 316.06, 'timestamp': '2025-05-18T23:22:07.199854'}
-2025-05-18 23:22:07,562 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -11.89, 'humidity': 96.39, 'timestamp': '2025-05-18T23:22:07.561771'}
-2025-05-18 23:22:08,057 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.68, 'timestamp': '2025-05-18T23:22:08.056539'}
-2025-05-18 23:22:08,354 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 381.84, 'pm25': 63.81, 'timestamp': '2025-05-18T23:22:08.353912'}
-2025-05-18 23:22:09,565 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 37.52, 'humidity': 48.28, 'timestamp': '2025-05-18T23:22:09.565677'}
-2025-05-18 23:22:10,203 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 28.41, 'wind_direction': 187.72, 'timestamp': '2025-05-18T23:22:10.203233'}
-2025-05-18 23:22:11,061 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 91.45, 'timestamp': '2025-05-18T23:22:11.060827'}
-2025-05-18 23:22:11,357 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 431.43, 'pm25': 65.63, 'timestamp': '2025-05-18T23:22:11.357321'}
-2025-05-18 23:22:11,571 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 16.67, 'humidity': 42.45, 'timestamp': '2025-05-18T23:22:11.571027'}
-2025-05-18 23:22:13,210 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 28.94, 'wind_direction': 85.34, 'timestamp': '2025-05-18T23:22:13.209095'}
-2025-05-18 23:22:13,574 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 7.43, 'humidity': 29.27, 'timestamp': '2025-05-18T23:22:13.574586'}
-2025-05-18 23:22:14,066 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 84.99, 'timestamp': '2025-05-18T23:22:14.065672'}
-2025-05-18 23:22:14,361 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 364.54, 'pm25': 7.14, 'timestamp': '2025-05-18T23:22:14.361487'}
-2025-05-18 23:22:15,580 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -15.91, 'humidity': 34.29, 'timestamp': '2025-05-18T23:22:15.579765'}
-2025-05-18 23:22:16,214 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 15.52, 'wind_direction': 224.67, 'timestamp': '2025-05-18T23:22:16.213864'}
-2025-05-18 23:22:17,067 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 33.1, 'timestamp': '2025-05-18T23:22:17.067007'}
-2025-05-18 23:22:17,366 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 523.02, 'pm25': 41.69, 'timestamp': '2025-05-18T23:22:17.366181'}
-2025-05-18 23:22:17,581 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 11.21, 'humidity': 69.55, 'timestamp': '2025-05-18T23:22:17.580966'}
-2025-05-18 23:22:19,219 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 10.39, 'wind_direction': 27.41, 'timestamp': '2025-05-18T23:22:19.218655'}
-2025-05-18 23:22:19,582 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -28.65, 'humidity': 37.03, 'timestamp': '2025-05-18T23:22:19.581261'}
-2025-05-18 23:22:19,582 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 5.24, 'humidity': 49.56, 'timestamp': '2025-05-18T23:22:19.582424', 'data_points': 10}
-2025-05-18 23:22:19,583 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:20,072 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 78.67, 'timestamp': '2025-05-18T23:22:20.072335'}
-2025-05-18 23:22:20,370 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 505.4, 'pm25': 62.16, 'timestamp': '2025-05-18T23:22:20.369831'}
-2025-05-18 23:22:21,588 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -1.12, 'humidity': 27.99, 'timestamp': '2025-05-18T23:22:21.587578'}
-2025-05-18 23:22:22,222 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.81, 'wind_direction': 133.88, 'timestamp': '2025-05-18T23:22:22.221944'}
-2025-05-18 23:22:23,075 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 95.83, 'timestamp': '2025-05-18T23:22:23.075204'}
-2025-05-18 23:22:23,375 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 726.55, 'pm25': 108.3, 'timestamp': '2025-05-18T23:22:23.375110'}
-2025-05-18 23:22:23,375 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 532.36, 'pm25': 70.92, 'timestamp': '2025-05-18T23:22:23.375335', 'data_points': 10}
-2025-05-18 23:22:23,375 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:23,592 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -14.42, 'humidity': 93.46, 'timestamp': '2025-05-18T23:22:23.589499'}
-2025-05-18 23:22:25,227 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.81, 'wind_direction': 178.51, 'timestamp': '2025-05-18T23:22:25.227728'}
-2025-05-18 23:22:25,595 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 26.4, 'humidity': 12.69, 'timestamp': '2025-05-18T23:22:25.594292'}
-2025-05-18 23:22:26,077 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 50.51, 'timestamp': '2025-05-18T23:22:26.076486'}
-2025-05-18 23:22:26,077 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 62.04, 'timestamp': '2025-05-18T23:22:26.077492', 'data_points': 10}
-2025-05-18 23:22:26,078 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:26,378 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 559.56, 'pm25': 98.24, 'timestamp': '2025-05-18T23:22:26.378325'}
-2025-05-18 23:22:27,597 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 3.61, 'humidity': 1.89, 'timestamp': '2025-05-18T23:22:27.597229'}
-2025-05-18 23:22:28,233 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 6.04, 'wind_direction': 77.49, 'timestamp': '2025-05-18T23:22:28.233013'}
-2025-05-18 23:22:29,082 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 87.18, 'timestamp': '2025-05-18T23:22:29.082269'}
-2025-05-18 23:22:29,379 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 587.41, 'pm25': 100.52, 'timestamp': '2025-05-18T23:22:29.378966'}
-2025-05-18 23:22:29,600 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 35.11, 'humidity': 88.12, 'timestamp': '2025-05-18T23:22:29.599475'}
-2025-05-18 23:22:31,235 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 8.58, 'wind_direction': 202.1, 'timestamp': '2025-05-18T23:22:31.235186'}
-2025-05-18 23:22:31,235 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 16.35, 'wind_direction': 144.54, 'timestamp': '2025-05-18T23:22:31.235531', 'data_points': 10}
-2025-05-18 23:22:31,235 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:31,603 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 42.89, 'humidity': 33.9, 'timestamp': '2025-05-18T23:22:31.603068'}
-2025-05-18 23:22:32,084 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 36.27, 'timestamp': '2025-05-18T23:22:32.083926'}
-2025-05-18 23:22:32,385 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 427.98, 'pm25': 38.05, 'timestamp': '2025-05-18T23:22:32.384197'}
-2025-05-18 23:22:33,608 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 22.96, 'humidity': 94.65, 'timestamp': '2025-05-18T23:22:33.608099'}
-2025-05-18 23:22:34,240 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 26.45, 'wind_direction': 297.74, 'timestamp': '2025-05-18T23:22:34.240432'}
-2025-05-18 23:22:35,088 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 45.52, 'timestamp': '2025-05-18T23:22:35.087327'}
-2025-05-18 23:22:35,385 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 972.44, 'pm25': 119.77, 'timestamp': '2025-05-18T23:22:35.384943'}
-2025-05-18 23:22:35,609 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 33.32, 'humidity': 85.07, 'timestamp': '2025-05-18T23:22:35.609504'}
-2025-05-18 23:22:37,244 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 17.7, 'wind_direction': 145.87, 'timestamp': '2025-05-18T23:22:37.243926'}
-2025-05-18 23:22:37,612 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -25.61, 'humidity': 52.39, 'timestamp': '2025-05-18T23:22:37.611458'}
-2025-05-18 23:22:38,090 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 61.99, 'timestamp': '2025-05-18T23:22:38.090537'}
-2025-05-18 23:22:38,390 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 530.55, 'pm25': 101.62, 'timestamp': '2025-05-18T23:22:38.389750'}
-2025-05-18 23:22:39,612 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 29.15, 'humidity': 47.37, 'timestamp': '2025-05-18T23:22:39.612391'}
-2025-05-18 23:22:39,613 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 15.23, 'humidity': 53.75, 'timestamp': '2025-05-18T23:22:39.613237', 'data_points': 10}
-2025-05-18 23:22:39,613 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:40,245 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 7.88, 'wind_direction': 192.8, 'timestamp': '2025-05-18T23:22:40.244749'}
-2025-05-18 23:22:41,094 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.36, 'timestamp': '2025-05-18T23:22:41.093616'}
-2025-05-18 23:22:41,395 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 645.33, 'pm25': 143.6, 'timestamp': '2025-05-18T23:22:41.395280'}
-2025-05-18 23:22:41,618 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 23.71, 'humidity': 64.55, 'timestamp': '2025-05-18T23:22:41.618131'}
-2025-05-18 23:22:43,249 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 10.32, 'wind_direction': 64.78, 'timestamp': '2025-05-18T23:22:43.249538'}
-2025-05-18 23:22:43,624 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -10.24, 'humidity': 89.16, 'timestamp': '2025-05-18T23:22:43.623998'}
-2025-05-18 23:22:44,100 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 53.42, 'timestamp': '2025-05-18T23:22:44.099497'}
-2025-05-18 23:22:44,397 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 838.99, 'pm25': 137.45, 'timestamp': '2025-05-18T23:22:44.397686'}
-2025-05-18 23:22:45,629 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 23.71, 'humidity': 13.44, 'timestamp': '2025-05-18T23:22:45.628923'}
-2025-05-18 23:22:46,255 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 20.97, 'wind_direction': 218.2, 'timestamp': '2025-05-18T23:22:46.254777'}
-2025-05-18 23:22:47,102 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 35.39, 'timestamp': '2025-05-18T23:22:47.101883'}
-2025-05-18 23:22:47,401 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 394.98, 'pm25': 46.46, 'timestamp': '2025-05-18T23:22:47.401410'}
-2025-05-18 23:22:47,634 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 50.63, 'humidity': 58.47, 'timestamp': '2025-05-18T23:22:47.633586'}
-2025-05-18 23:22:49,259 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 10.2, 'wind_direction': 103.97, 'timestamp': '2025-05-18T23:22:49.258113'}
-2025-05-18 23:22:49,639 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 18.88, 'humidity': 16.7, 'timestamp': '2025-05-18T23:22:49.639200'}
-2025-05-18 23:22:50,104 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 51.26, 'timestamp': '2025-05-18T23:22:50.103961'}
-2025-05-18 23:22:50,404 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 348.42, 'pm25': 142.94, 'timestamp': '2025-05-18T23:22:50.404083'}
-2025-05-18 23:22:51,641 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 59.67, 'humidity': 43.21, 'timestamp': '2025-05-18T23:22:51.640560'}
-2025-05-18 23:22:52,264 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 23.06, 'wind_direction': 330.63, 'timestamp': '2025-05-18T23:22:52.264336'}
-2025-05-18 23:22:53,260 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.61, 'timestamp': '2025-05-18T23:22:53.109462'}
-2025-05-18 23:22:53,406 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 427.07, 'pm25': 63.22, 'timestamp': '2025-05-18T23:22:53.406581'}
-2025-05-18 23:22:53,406 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 573.27, 'pm25': 99.19, 'timestamp': '2025-05-18T23:22:53.406796', 'data_points': 10}
-2025-05-18 23:22:53,407 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:53,645 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 57.18, 'humidity': 38.45, 'timestamp': '2025-05-18T23:22:53.645568'}
-2025-05-18 23:22:55,269 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 16.87, 'wind_direction': 18.04, 'timestamp': '2025-05-18T23:22:55.269103'}
-2025-05-18 23:22:55,648 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 54.17, 'humidity': 11.2, 'timestamp': '2025-05-18T23:22:55.647392'}
-2025-05-18 23:22:56,111 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 54.48, 'timestamp': '2025-05-18T23:22:56.110855'}
-2025-05-18 23:22:56,111 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 52.05, 'timestamp': '2025-05-18T23:22:56.111183', 'data_points': 10}
-2025-05-18 23:22:56,111 - 📤 Sent aggregated data to central server
-2025-05-18 23:22:56,412 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 901.57, 'pm25': 115.6, 'timestamp': '2025-05-18T23:22:56.411375'}
-2025-05-18 23:22:57,652 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 6.81, 'humidity': 29.52, 'timestamp': '2025-05-18T23:22:57.652487'}
-2025-05-18 23:22:58,276 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 3.49, 'wind_direction': 47.56, 'timestamp': '2025-05-18T23:22:58.274412'}
-2025-05-18 23:22:59,113 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 51.66, 'timestamp': '2025-05-18T23:22:59.112645'}
-2025-05-18 23:22:59,415 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 326.66, 'pm25': 113.78, 'timestamp': '2025-05-18T23:22:59.415436'}
-2025-05-18 23:22:59,653 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -22.92, 'humidity': 47.61, 'timestamp': '2025-05-18T23:22:59.653439'}
-2025-05-18 23:22:59,653 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 26.16, 'humidity': 41.23, 'timestamp': '2025-05-18T23:22:59.653903', 'data_points': 10}
-2025-05-18 23:22:59,654 - 📤 Sent aggregated data to central server
-2025-05-18 23:23:01,281 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 17.95, 'wind_direction': 255.28, 'timestamp': '2025-05-18T23:23:01.281690'}
-2025-05-18 23:23:01,282 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 15.49, 'wind_direction': 167.49, 'timestamp': '2025-05-18T23:23:01.282022', 'data_points': 10}
-2025-05-18 23:23:01,282 - 📤 Sent aggregated data to central server
-2025-05-18 23:23:01,659 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -23.56, 'humidity': 22.71, 'timestamp': '2025-05-18T23:23:01.658850'}
-2025-05-18 23:23:02,114 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 75.37, 'timestamp': '2025-05-18T23:23:02.113977'}
-2025-05-18 23:23:02,416 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 558.64, 'pm25': 146.03, 'timestamp': '2025-05-18T23:23:02.416763'}
-2025-05-18 23:23:03,664 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 23.27, 'humidity': 20.67, 'timestamp': '2025-05-18T23:23:03.664623'}
-2025-05-18 23:23:04,285 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 15.05, 'wind_direction': 198.52, 'timestamp': '2025-05-18T23:23:04.285266'}
-2025-05-18 23:23:05,115 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 98.51, 'timestamp': '2025-05-18T23:23:05.114960'}
-2025-05-18 23:23:05,418 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 399.81, 'pm25': 85.32, 'timestamp': '2025-05-18T23:23:05.418001'}
-2025-05-18 23:23:05,670 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 50.12, 'humidity': 47.29, 'timestamp': '2025-05-18T23:23:05.669970'}
-2025-05-18 23:23:07,289 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 12.99, 'wind_direction': 200.05, 'timestamp': '2025-05-18T23:23:07.288370'}
-2025-05-18 23:23:07,675 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 12.1, 'humidity': 78.77, 'timestamp': '2025-05-18T23:23:07.675665'}
-2025-05-18 23:23:08,117 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 90.59, 'timestamp': '2025-05-18T23:23:08.117102'}
-2025-05-18 23:23:08,420 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 429.64, 'pm25': 120.61, 'timestamp': '2025-05-18T23:23:08.420298'}
-2025-05-18 23:23:09,676 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 51.18, 'humidity': 24.77, 'timestamp': '2025-05-18T23:23:09.676336'}
-2025-05-18 23:23:10,293 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 20.22, 'wind_direction': 65.64, 'timestamp': '2025-05-18T23:23:10.292988'}
-2025-05-18 23:23:11,123 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 41.1, 'timestamp': '2025-05-18T23:23:11.122728'}
-2025-05-18 23:23:11,423 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 645.63, 'pm25': 82.98, 'timestamp': '2025-05-18T23:23:11.423722'}
-2025-05-18 23:23:11,680 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 16.88, 'humidity': 42.39, 'timestamp': '2025-05-18T23:23:11.679852'}
-2025-05-18 23:23:13,295 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 4.27, 'wind_direction': 297.35, 'timestamp': '2025-05-18T23:23:13.295524'}
-2025-05-18 23:23:13,686 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -5.79, 'humidity': 80.33, 'timestamp': '2025-05-18T23:23:13.685381'}
-2025-05-18 23:23:14,128 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 66.6, 'timestamp': '2025-05-18T23:23:14.128186'}
-2025-05-18 23:23:14,428 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 764.03, 'pm25': 38.49, 'timestamp': '2025-05-18T23:23:14.427855'}
-2025-05-18 23:23:15,690 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -26.81, 'humidity': 15.8, 'timestamp': '2025-05-18T23:23:15.689951'}
-2025-05-18 23:23:16,296 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 18.62, 'wind_direction': 255.44, 'timestamp': '2025-05-18T23:23:16.296584'}
-2025-05-18 23:23:17,132 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 94.38, 'timestamp': '2025-05-18T23:23:17.132058'}
-2025-05-18 23:23:17,432 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 648.11, 'pm25': 31.73, 'timestamp': '2025-05-18T23:23:17.432040'}
-2025-05-18 23:23:17,691 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -9.28, 'humidity': 6.72, 'timestamp': '2025-05-18T23:23:17.691067'}
-2025-05-18 23:23:19,299 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 24.25, 'wind_direction': 131.5, 'timestamp': '2025-05-18T23:23:19.298776'}
-2025-05-18 23:23:19,695 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 5.39, 'humidity': 71.84, 'timestamp': '2025-05-18T23:23:19.695071'}
-2025-05-18 23:23:19,695 - ✅ Aggregated data (temperature_humidity): {'sensor_id': 'temperature_humidity_1', 'temperature': 9.35, 'humidity': 41.13, 'timestamp': '2025-05-18T23:23:19.695642', 'data_points': 10}
-2025-05-18 23:23:19,696 - 📤 Sent aggregated data to central server
-2025-05-18 23:23:20,137 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 64.91, 'timestamp': '2025-05-18T23:23:20.136717'}
-2025-05-18 23:23:20,437 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 351.63, 'pm25': 71.74, 'timestamp': '2025-05-18T23:23:20.437388'}
-2025-05-18 23:23:21,698 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 6.86, 'humidity': 76.3, 'timestamp': '2025-05-18T23:23:21.698648'}
-2025-05-18 23:23:22,303 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 5.08, 'wind_direction': 24.32, 'timestamp': '2025-05-18T23:23:22.302851'}
-2025-05-18 23:23:23,138 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.8, 'timestamp': '2025-05-18T23:23:23.137873'}
-2025-05-18 23:23:23,443 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 908.97, 'pm25': 99.66, 'timestamp': '2025-05-18T23:23:23.442655'}
-2025-05-18 23:23:23,443 - ✅ Aggregated data (air_quality): {'sensor_id': 'air_quality_1', 'co2': 593.47, 'pm25': 90.59, 'timestamp': '2025-05-18T23:23:23.443298', 'data_points': 10}
-2025-05-18 23:23:23,444 - 📤 Sent aggregated data to central server
-2025-05-18 23:23:23,704 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -6.67, 'humidity': 53.82, 'timestamp': '2025-05-18T23:23:23.703876'}
-2025-05-18 23:23:25,305 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 8.5, 'wind_direction': 31.15, 'timestamp': '2025-05-18T23:23:25.304706'}
-2025-05-18 23:23:25,705 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 27.03, 'humidity': 77.71, 'timestamp': '2025-05-18T23:23:25.705035'}
-2025-05-18 23:23:26,141 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 39.86, 'timestamp': '2025-05-18T23:23:26.141500'}
-2025-05-18 23:23:26,142 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 69.08, 'timestamp': '2025-05-18T23:23:26.142125', 'data_points': 10}
-2025-05-18 23:23:26,142 - 📤 Sent aggregated data to central server
-2025-05-18 23:23:26,448 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 309.98, 'pm25': 21.22, 'timestamp': '2025-05-18T23:23:26.447620'}
-2025-05-18 23:23:27,710 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 34.73, 'humidity': 66.72, 'timestamp': '2025-05-18T23:23:27.710231'}
-2025-05-18 23:23:28,310 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 20.54, 'wind_direction': 239.37, 'timestamp': '2025-05-18T23:23:28.310428'}
-2025-05-18 23:23:29,145 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 73.65, 'timestamp': '2025-05-18T23:23:29.145453'}
-2025-05-18 23:23:29,451 - 📥 Received data from air_quality_1: {'sensor_id': 'air_quality_1', 'co2': 988.44, 'pm25': 91.73, 'timestamp': '2025-05-18T23:23:29.451588'}
-2025-05-18 23:23:29,712 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': -13.59, 'humidity': 86.78, 'timestamp': '2025-05-18T23:23:29.712069'}
-2025-05-18 23:23:31,315 - 📥 Received data from wind_speed_1: {'sensor_id': 'wind_speed_1', 'wind_speed': 27.12, 'wind_direction': 223.67, 'timestamp': '2025-05-18T23:23:31.315599'}
-2025-05-18 23:23:31,315 - ✅ Aggregated data (wind_speed): {'sensor_id': 'wind_speed_1', 'wind_speed': 15.66, 'wind_direction': 166.7, 'timestamp': '2025-05-18T23:23:31.315891', 'data_points': 10}
-2025-05-18 23:23:31,316 - 📤 Sent aggregated data to central server
-2025-05-18 23:23:31,718 - 📥 Received data from temperature_humidity_1: {'sensor_id': 'temperature_humidity_1', 'temperature': 35.42, 'humidity': 95.75, 'timestamp': '2025-05-18T23:23:31.717627'}
+2025-05-18 23:47:26,231 - 🚀 Drone server listening on port 5000
+2025-05-18 23:47:29,972 - 📶 New connection from ('127.0.0.1', 52037)
+2025-05-18 23:47:29,972 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 89.62, 'timestamp': '2025-05-18T23:47:29.972435'}
+2025-05-18 23:47:32,978 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 49.79, 'timestamp': '2025-05-18T23:47:32.977655'}
+2025-05-18 23:47:35,980 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 34.93, 'timestamp': '2025-05-18T23:47:35.979799'}
+2025-05-18 23:47:38,983 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.39, 'timestamp': '2025-05-18T23:47:38.983523'}
+2025-05-18 23:47:41,989 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.13, 'timestamp': '2025-05-18T23:47:41.988897'}
+2025-05-18 23:47:44,995 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.4, 'timestamp': '2025-05-18T23:47:44.994756'}
+2025-05-18 23:47:48,000 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 77.1, 'timestamp': '2025-05-18T23:47:47.999707'}
+2025-05-18 23:47:51,004 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 30.93, 'timestamp': '2025-05-18T23:47:51.003842'}
+2025-05-18 23:47:54,009 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 96.47, 'timestamp': '2025-05-18T23:47:54.008120'}
+2025-05-18 23:47:57,010 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 69.23, 'timestamp': '2025-05-18T23:47:57.010206'}
+2025-05-18 23:47:57,011 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 66.2, 'timestamp': '2025-05-18T23:47:57.011262', 'data_points': 10}
+2025-05-18 23:47:57,012 - 📤 Sent aggregated data to central server
+2025-05-18 23:48:00,013 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 78.68, 'timestamp': '2025-05-18T23:48:00.013013'}
+2025-05-18 23:48:03,015 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 74.92, 'timestamp': '2025-05-18T23:48:03.014039'}
+2025-05-18 23:48:06,020 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 75.46, 'timestamp': '2025-05-18T23:48:06.020253'}
+2025-05-18 23:48:09,022 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 37.83, 'timestamp': '2025-05-18T23:48:09.021569'}
+2025-05-18 23:48:12,028 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 59.13, 'timestamp': '2025-05-18T23:48:12.027358'}
+2025-05-18 23:48:15,030 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 77.42, 'timestamp': '2025-05-18T23:48:15.029718'}
+2025-05-18 23:48:18,033 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 37.35, 'timestamp': '2025-05-18T23:48:18.032222'}
+2025-05-18 23:48:21,035 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 61.84, 'timestamp': '2025-05-18T23:48:21.035029'}
+2025-05-18 23:48:24,040 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 91.16, 'timestamp': '2025-05-18T23:48:24.040207'}
+2025-05-18 23:48:27,043 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 79.61, 'timestamp': '2025-05-18T23:48:27.042391'}
+2025-05-18 23:48:27,043 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 67.34, 'timestamp': '2025-05-18T23:48:27.043473', 'data_points': 10}
+2025-05-18 23:48:27,044 - 📤 Sent aggregated data to central server
+2025-05-18 23:48:30,045 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 80.85, 'timestamp': '2025-05-18T23:48:30.045314'}
+2025-05-18 23:48:33,051 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 38.46, 'timestamp': '2025-05-18T23:48:33.051000'}
+2025-05-18 23:48:36,054 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 34.78, 'timestamp': '2025-05-18T23:48:36.053025'}
+2025-05-18 23:48:39,058 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.94, 'timestamp': '2025-05-18T23:48:39.058088'}
+2025-05-18 23:48:42,064 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 98.9, 'timestamp': '2025-05-18T23:48:42.063644'}
+2025-05-18 23:48:45,067 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.08, 'timestamp': '2025-05-18T23:48:45.066266'}
+2025-05-18 23:48:48,069 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 95.36, 'timestamp': '2025-05-18T23:48:48.068391'}
+2025-05-18 23:48:51,070 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 49.7, 'timestamp': '2025-05-18T23:48:51.070325'}
+2025-05-18 23:48:54,076 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 57.21, 'timestamp': '2025-05-18T23:48:54.075645'}
+2025-05-18 23:48:57,082 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.35, 'timestamp': '2025-05-18T23:48:57.080445'}
+2025-05-18 23:48:57,082 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 63.06, 'timestamp': '2025-05-18T23:48:57.082842', 'data_points': 10}
+2025-05-18 23:48:57,084 - 📤 Sent aggregated data to central server
+2025-05-18 23:49:00,087 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.61, 'timestamp': '2025-05-18T23:49:00.087273'}
+2025-05-18 23:49:03,093 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 32.31, 'timestamp': '2025-05-18T23:49:03.092396'}
+2025-05-18 23:49:06,096 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 87.28, 'timestamp': '2025-05-18T23:49:06.096228'}
+2025-05-18 23:49:09,097 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 89.02, 'timestamp': '2025-05-18T23:49:09.096772'}
+2025-05-18 23:49:12,103 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 59.45, 'timestamp': '2025-05-18T23:49:12.102392'}
+2025-05-18 23:49:15,108 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 31.81, 'timestamp': '2025-05-18T23:49:15.108229'}
+2025-05-18 23:49:18,111 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.91, 'timestamp': '2025-05-18T23:49:18.110850'}
+2025-05-18 23:49:21,113 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 56.63, 'timestamp': '2025-05-18T23:49:21.112997'}
+2025-05-18 23:49:24,118 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 97.55, 'timestamp': '2025-05-18T23:49:24.118244'}
+2025-05-18 23:49:27,120 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 64.32, 'timestamp': '2025-05-18T23:49:27.120046'}
+2025-05-18 23:49:27,120 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 65.29, 'timestamp': '2025-05-18T23:49:27.120735', 'data_points': 10}
+2025-05-18 23:49:27,121 - 📤 Sent aggregated data to central server
+2025-05-18 23:49:30,125 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 43.37, 'timestamp': '2025-05-18T23:49:30.125566'}
+2025-05-18 23:49:33,130 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 37.6, 'timestamp': '2025-05-18T23:49:33.128663'}
+2025-05-18 23:49:36,135 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 42.82, 'timestamp': '2025-05-18T23:49:36.134792'}
+2025-05-18 23:49:39,138 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 31.13, 'timestamp': '2025-05-18T23:49:39.138201'}
+2025-05-18 23:49:42,139 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 89.32, 'timestamp': '2025-05-18T23:49:42.139060'}
+2025-05-18 23:49:45,141 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 47.29, 'timestamp': '2025-05-18T23:49:45.141495'}
+2025-05-18 23:49:48,147 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 79.45, 'timestamp': '2025-05-18T23:49:48.146858'}
+2025-05-18 23:49:51,151 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 73.62, 'timestamp': '2025-05-18T23:49:51.151077'}
+2025-05-18 23:49:54,155 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 98.35, 'timestamp': '2025-05-18T23:49:54.155803'}
+2025-05-18 23:49:57,157 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 72.46, 'timestamp': '2025-05-18T23:49:57.156250'}
+2025-05-18 23:49:57,157 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 61.54, 'timestamp': '2025-05-18T23:49:57.157629', 'data_points': 10}
+2025-05-18 23:49:57,159 - 📤 Sent aggregated data to central server
+2025-05-18 23:50:00,163 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 83.36, 'timestamp': '2025-05-18T23:50:00.162492'}
+2025-05-18 23:50:03,168 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 59.87, 'timestamp': '2025-05-18T23:50:03.168313'}
+2025-05-18 23:50:06,173 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 48.87, 'timestamp': '2025-05-18T23:50:06.173514'}
+2025-05-18 23:50:09,178 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 93.19, 'timestamp': '2025-05-18T23:50:09.177727'}
+2025-05-18 23:50:12,183 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 68.52, 'timestamp': '2025-05-18T23:50:12.183124'}
+2025-05-18 23:50:15,189 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 66.14, 'timestamp': '2025-05-18T23:50:15.188490'}
+2025-05-18 23:50:18,191 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 48.47, 'timestamp': '2025-05-18T23:50:18.191457'}
+2025-05-18 23:50:21,196 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.58, 'timestamp': '2025-05-18T23:50:21.196793'}
+2025-05-18 23:50:24,202 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 76.37, 'timestamp': '2025-05-18T23:50:24.202018'}
+2025-05-18 23:50:27,204 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 38.77, 'timestamp': '2025-05-18T23:50:27.204467'}
+2025-05-18 23:50:27,204 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 67.01, 'timestamp': '2025-05-18T23:50:27.204759', 'data_points': 10}
+2025-05-18 23:50:27,205 - 📤 Sent aggregated data to central server
+2025-05-18 23:50:30,206 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 49.52, 'timestamp': '2025-05-18T23:50:30.206034'}
+2025-05-18 23:50:33,212 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 52.03, 'timestamp': '2025-05-18T23:50:33.211910'}
+2025-05-18 23:50:36,217 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 89.01, 'timestamp': '2025-05-18T23:50:36.217669'}
+2025-05-18 23:50:39,221 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 63.35, 'timestamp': '2025-05-18T23:50:39.221549'}
+2025-05-18 23:50:42,227 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 84.65, 'timestamp': '2025-05-18T23:50:42.227054'}
+2025-05-18 23:50:45,232 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 94.34, 'timestamp': '2025-05-18T23:50:45.232488'}
+2025-05-18 23:50:48,238 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 67.82, 'timestamp': '2025-05-18T23:50:48.237723'}
+2025-05-18 23:50:51,241 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 56.62, 'timestamp': '2025-05-18T23:50:51.241597'}
+2025-05-18 23:50:54,246 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 32.0, 'timestamp': '2025-05-18T23:50:54.246222'}
+2025-05-18 23:50:57,249 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 40.68, 'timestamp': '2025-05-18T23:50:57.248579'}
+2025-05-18 23:50:57,249 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 63.0, 'timestamp': '2025-05-18T23:50:57.249587', 'data_points': 10}
+2025-05-18 23:50:57,250 - 📤 Sent aggregated data to central server
+2025-05-18 23:51:00,254 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 73.19, 'timestamp': '2025-05-18T23:51:00.254303'}
+2025-05-18 23:51:03,259 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 82.6, 'timestamp': '2025-05-18T23:51:03.259100'}
+2025-05-18 23:51:06,264 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 73.67, 'timestamp': '2025-05-18T23:51:06.263720'}
+2025-05-18 23:51:09,269 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 90.66, 'timestamp': '2025-05-18T23:51:09.269085'}
+2025-05-18 23:51:12,275 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 45.63, 'timestamp': '2025-05-18T23:51:12.274810'}
+2025-05-18 23:51:15,275 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 43.55, 'timestamp': '2025-05-18T23:51:15.275682'}
+2025-05-18 23:51:18,281 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 85.99, 'timestamp': '2025-05-18T23:51:18.279914'}
+2025-05-18 23:51:21,286 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.82, 'timestamp': '2025-05-18T23:51:21.286003'}
+2025-05-18 23:51:24,289 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 54.52, 'timestamp': '2025-05-18T23:51:24.289219'}
+2025-05-18 23:51:27,292 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 64.62, 'timestamp': '2025-05-18T23:51:27.291774'}
+2025-05-18 23:51:27,292 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 70.12, 'timestamp': '2025-05-18T23:51:27.292790', 'data_points': 10}
+2025-05-18 23:51:27,293 - 📤 Sent aggregated data to central server
+2025-05-18 23:51:30,297 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 78.87, 'timestamp': '2025-05-18T23:51:30.297503'}
+2025-05-18 23:51:33,302 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 92.87, 'timestamp': '2025-05-18T23:51:33.301932'}
+2025-05-18 23:51:36,304 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 78.56, 'timestamp': '2025-05-18T23:51:36.304169'}
+2025-05-18 23:51:39,305 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 54.47, 'timestamp': '2025-05-18T23:51:39.305210'}
+2025-05-18 23:51:42,309 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 98.56, 'timestamp': '2025-05-18T23:51:42.308485'}
+2025-05-18 23:51:45,310 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 55.6, 'timestamp': '2025-05-18T23:51:45.310431'}
+2025-05-18 23:51:48,311 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 45.68, 'timestamp': '2025-05-18T23:51:48.311547'}
+2025-05-18 23:51:51,317 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 50.25, 'timestamp': '2025-05-18T23:51:51.316810'}
+2025-05-18 23:51:54,322 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 60.49, 'timestamp': '2025-05-18T23:51:54.322112'}
+2025-05-18 23:51:57,326 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 37.19, 'timestamp': '2025-05-18T23:51:57.326051'}
+2025-05-18 23:51:57,326 - ✅ Aggregated data (noise_level): {'sensor_id': 'noise_level_1', 'decibel': 65.25, 'timestamp': '2025-05-18T23:51:57.326335', 'data_points': 10}
+2025-05-18 23:51:57,326 - 📤 Sent aggregated data to central server
+2025-05-18 23:52:00,332 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 86.36, 'timestamp': '2025-05-18T23:52:00.331333'}
+2025-05-18 23:52:03,334 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 82.76, 'timestamp': '2025-05-18T23:52:03.333356'}
+2025-05-18 23:52:06,341 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 98.39, 'timestamp': '2025-05-18T23:52:06.341495'}
+2025-05-18 23:52:09,344 - 📥 Received data from noise_level_1: {'sensor_id': 'noise_level_1', 'decibel': 97.05, 'timestamp': '2025-05-18T23:52:09.343763'}
