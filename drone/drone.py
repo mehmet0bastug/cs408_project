@@ -207,14 +207,18 @@ class DroneServer:
 
 
 
-
+from gui import DroneGUI
 
 def main():
     config = load_config()
     logger = create_logger(config["log_file"])
-
     drone_server = DroneServer(config, logger)
-    drone_server.start()
+
+    server_thread = threading.Thread(target=drone_server.start)
+    server_thread.daemon = True
+    server_thread.start()
+
+    DroneGUI(drone_server)
 
 if __name__ == "__main__":
     main()
